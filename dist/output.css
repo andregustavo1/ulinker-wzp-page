@@ -1046,6 +1046,10 @@ video {
     margin-top: 5rem;
   }
 
+  .md\:block{
+    display: block;
+  }
+
   .md\:flex{
     display: flex;
   }
@@ -1104,6 +1108,14 @@ video {
 
   .xl\:w-\[600px\]{
     width: 600px;
+  }
+
+  .xl\:w-\[\]{
+    width: ;
+  }
+
+  .xl\:w-\[350px\]{
+    width: 350px;
   }
 
   .xl\:justify-between{
