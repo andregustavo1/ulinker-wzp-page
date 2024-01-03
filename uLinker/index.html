@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>uLinker</title>
+
+    <link rel="stylesheet" href="dist/output.css">
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+	<link rel="icon" type="image/png" href="src/images/logo-png-white.png">
+
+    <script src="src/js/script.js" defer></script>
+</head>
+
+<body class="grid place-items-center font-lexend">
+
+	<div class="shadow-md shadow-slate-400 w-[375px] rounded-md">
+		<header class="flex justify-between mx-auto px-5 w-[375px] h-[60px] rounded-t-md">
+			<img class="relative ml-[-20px] " src="./src/images/bc-e-pt.jpg">
+			<a class="h-full flex items-center" href="whatsapp://send?text=Confira meu perfil digital: https://vcard.com"><i class="text-2xl ri-share-fill"></i></a>
+		</header>
+
+		<div class="border-b-[1px] border-[#a4a4a4] w-[375px]"></div>
+
+		<div id="container" class="relative grid place-items-center mx-auto px-5 w-[375px] bg-[#fafafa] pb-16">
+			<div class="absolute top-0 bg-[#8234E9] min-w-[375px] h-[180px]"></div>
+			<img class="w-[150px] h-[150px] rounded-full z-10 mt-[110px] border-[4px] border-[#fafafa]" src="./src/images/complete.jpg"> 
+			
+			<p class="text-xl mt-4">uLinker</p>
+			<p class="text-center text-sm mt-1 text-neutral-600">Cartões Tecnológicos</p>
+
+			<a class="flex items-center mt-4 scale-110 left-0 bg-[#8234E9] py-1 px-2 rounded-xl text-white" href="data:text/vcard;charset=utf-8,BEGIN:VCARD%0AVERSION:3.0%0AFN:Forninho%0ATEL;TYPE=CELL:+5511999541120%0AEMAIL:contato@forninho.com.br%0AEND:VCARD"><i class="ri-contacts-book-fill text-xl mr-2"></i>SALVAR CONTATO</a>
+
+			<div class="flex gap-4 mt-8">
+				<a class="flex items-center justify-center text-sm w-[125px]" href="https://wa.me/5511999541120" target="_blank">
+					<i class="ri-whatsapp-line bg-green-500 py-1 px-2 rounded-l-xl text-xl text-[#fafafa]"></i>
+					<p class="flex items-center justify-center text-center leading-[1.2] py-1 px-2 rounded-r-xl bg-gray-300 h-[36px] w-[90px]">WhatsApp</p>
+				</a>
+				
+				<div id="telBtn" class="flex items-center justify-center text-sm w-[125px] cursor-pointer"> 
+					<a class="flex items-center justify-center text-sm w-[125px]" href="tel:+5511999541120">
+						<i class="ri-phone-fill bg-slate-500 py-1 px-2 rounded-l-xl text-xl text-[#fafafa]"></i>
+						<p class="flex items-center justify-center py-1 px-2 rounded-r-xl bg-gray-300 h-[36px] w-[90px]">Telefone</p>
+					</a>
+				</div>
+			</div>
+
+			<div class="flex gap-4 mt-4">
+				<a class="flex items-center justify-center text-sm" href="" target="_blank">
+					<i class="ri-global-line bg-blue-500 py-1 px-2 rounded-l-xl text-xl text-[#fafafa]"></i>
+					<p class="flex items-center justify-center py-1 px-2 rounded-r-xl bg-gray-300 h-[36px] w-[90px]">Site</p>
+				</a>
+				
+				<div id="emailBtn" class="flex items-center justify-center text-sm w-[125px] cursor-pointer">
+					<i class="ri-mail-line bg-rose-500 py-1 px-2 rounded-l-xl text-xl text-[#fafafa]"></i>
+					<div id="emailBtnText" class="flex items-center justify-center py-1 px-2 rounded-r-xl bg-gray-300 h-[36px] w-[90px]">E-Mail
+						<div id="emailText" class="hidden">email@teste</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="flex gap-4 mt-4">
+				<a class="flex items-center justify-center text-sm" href="" target="_blank">
+					<i class="ri-instagram-line bg-gradient-to-tr from-purple-400 via-pink-500 to-red-500 py-1 px-2 rounded-l-xl text-xl text-[#fafafa]"></i>
+					<p class="flex items-center justify-center py-1 px-2 rounded-r-xl bg-gray-300 h-[36px] w-[90px]">Instagram</p>
+				</a>
+				
+				<a class="flex items-center justify-center text-sm w-[125px]" href="" target="_blank">
+					<i class="ri-facebook-fill bg-blue-600 py-1 px-2 rounded-l-xl text-xl text-[#fafafa]"></i>
+					<p class="flex items-center justify-center py-1 px-2 rounded-r-xl bg-gray-300 h-[36px] w-[90px]">Facebook</p>
+				</a>
+			</div>
+
+			<div class="flex gap-4 mt-4">
+				<div id="btnPix" class="flex items-center justify-center text-sm cursor-pointer">
+					<div class="h-9 w-9 bg-teal-500 py-1 px-2 rounded-l-xl text-xl text-[#fafafa] grid place-items-center">
+						<img class=" " src="src/images/pix.png">
+					</div>
+					<p class="flex items-center justify-center py-1 px-2 rounded-r-xl bg-gray-300 h-[36px] w-[90px]">Pix</p>
+				</div>
+
+				<a class="flex items-center justify-center text-sm w-[125px]" href="https://www.google.com/maps/search/?api=1&query=latitude,longitude" target="_blank">
+					<i class="ri-map-pin-2-fill bg-red-600 py-1 px-2 rounded-l-xl text-xl text-[#fafafa]"></i>
+					<p class="flex items-center justify-center py-1 px-2 rounded-r-xl bg-gray-300 h-[36px] w-[90px]">Local</p>
+				</a>
+			</div>
+		</div>
+
+		<div id="pix" class="hidden relative grid place-items-center mx-auto px-5 w-[375px] py-16">
+			<i id="pixBack" class="flex items-center cursor-pointer absolute px-5 top-8 left-0 ri-arrow-left-s-line text-4xl"><span class="font-lexend text-base" >Voltar</span></i>
+
+			<div id="key">
+				<a id="pixBtn" class="flex items-center justify-center scale-110 w-[180px] mt-14 left-0 bg-teal-500 py-1 px-2 rounded-xl text-white cursor-pointer">Copiar Chave Pix</a>
+				<div id="pixKey" class="hidden">11980000031</div>
+			</div>
+
+			<img class="scale-90 mt-[-13px]" src="src/images/pixqrcode.png">
+		</div>
+
+		<div class="relative bottom-0 bg-slate-600 grid place-items-center mx-auto px-5 w-[375px] h-[40px] rounded-t-lg rounded-b-md text-white">
+			<a href=""><img class="h-5 w-auto" src="src/images/logo-png-white.png"></a>
+		</div>
+	</div>
+</body>
+</html>
