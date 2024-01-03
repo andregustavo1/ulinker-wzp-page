@@ -72,7 +72,7 @@ faq1.addEventListener("click", function () {
   faqAnswer1.classList.toggle("max-h-0");
   faqAnswer1.classList.toggle("max-h-96");
   faq1.classList.toggle("rotate-[-45deg]");
-  faq1.classList.toggle("bg-violet-800");
+  faq1.classList.toggle("bg-[#8234E9]");
   faq1.classList.toggle("text-white");
 });
 
@@ -83,17 +83,72 @@ faq2.addEventListener("click", function () {
   faqAnswer2.classList.toggle("max-h-0");
   faqAnswer2.classList.toggle("max-h-96");
   faq2.classList.toggle("rotate-[-45deg]");
-  faq2.classList.toggle("bg-violet-800");
+  faq2.classList.toggle("bg-[#8234E9]");
   faq2.classList.toggle("text-white");
 });
 
-// const faq3 = document.getElementById("faq3");
-// const faqText3 = document.getElementById("faqText3");
+const faq3 = document.getElementById("faq3");
+const faqAnswer3 = document.getElementById("faqAnswer3");
 
-// faq3.addEventListener("click", function () {
-//   faqText3.classList.toggle("max-h-0");
-//   faqText3.classList.toggle("max-h-96");
-//   faq3.classList.toggle("rotate-[-45deg]");
-//   faq3.classList.toggle("bg-violet-800");
-//   faq3.classList.toggle("text-white");
-// });
+faq3.addEventListener("click", function () {
+  faqAnswer3.classList.toggle("max-h-0");
+  faqAnswer3.classList.toggle("max-h-96");
+  faq3.classList.toggle("rotate-[-45deg]");
+  faq3.classList.toggle("bg-[#8234E9]");
+  faq3.classList.toggle("text-white");
+});
+
+const faq4 = document.getElementById("faq4");
+const faqAnswer4 = document.getElementById("faqAnswer4");
+
+faq4.addEventListener("click", function () {
+  faqAnswer4.classList.toggle("max-h-0");
+  faqAnswer4.classList.toggle("max-h-96");
+  faq4.classList.toggle("rotate-[-45deg]");
+  faq4.classList.toggle("bg-[#8234E9]");
+  faq4.classList.toggle("text-white");
+});
+
+const faq5 = document.getElementById("faq5");
+const faqAnswer5 = document.getElementById("faqAnswer5");
+
+faq5.addEventListener("click", function () {
+  faqAnswer5.classList.toggle("max-h-0");
+  faqAnswer5.classList.toggle("max-h-96");
+  faq5.classList.toggle("rotate-[-45deg]");
+  faq5.classList.toggle("bg-[#8234E9]");
+  faq5.classList.toggle("text-white");
+});
+
+const faq6 = document.getElementById("faq6");
+const faqAnswer6 = document.getElementById("faqAnswer6");
+
+faq6.addEventListener("click", function () {
+  faqAnswer6.classList.toggle("max-h-0");
+  faqAnswer6.classList.toggle("max-h-96");
+  faq6.classList.toggle("rotate-[-45deg]");
+  faq6.classList.toggle("bg-[#8234E9]");
+  faq6.classList.toggle("text-white");
+});
+
+const faq7 = document.getElementById("faq7");
+const faqAnswer7 = document.getElementById("faqAnswer7");
+
+faq7.addEventListener("click", function () {
+  faqAnswer7.classList.toggle("max-h-0");
+  faqAnswer7.classList.toggle("max-h-96");
+  faq7.classList.toggle("rotate-[-45deg]");
+  faq7.classList.toggle("bg-[#8234E9]");
+  faq7.classList.toggle("text-white");
+});
+
+const faq8 = document.getElementById("faq8");
+const faqAnswer8 = document.getElementById("faqAnswer8");
+
+faq8.addEventListener("click", function () {
+  faqAnswer8.classList.toggle("max-h-0");
+  faqAnswer8.classList.toggle("max-h-96");
+  faq8.classList.toggle("rotate-[-45deg]");
+  faq8.classList.toggle("bg-[#8234E9]");
+  faq8.classList.toggle("text-white");
+});
