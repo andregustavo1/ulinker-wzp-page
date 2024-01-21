@@ -3,6 +3,10 @@ module.exports = {
   content: ["./src/**/*.{html,js}", "./index.html", "./profiles/**/*.html"],
   theme: {
     extend: {
+      colors: {
+        primary: '#883CEB',
+      },
+
       fontFamily: {
         lexend: ["Lexend Deca", "sans-serif"],
       },
