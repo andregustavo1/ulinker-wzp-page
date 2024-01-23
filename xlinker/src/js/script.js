@@ -5,6 +5,7 @@ const pixArea = document.getElementById('pixArea');
 pixBtn.addEventListener('click', () => {
     container.classList.add('hidden');
     pixArea.classList.remove('hidden');
+    window.scrollTo(0, 0);
 });
 
 const back = document.getElementById('back');
