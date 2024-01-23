@@ -1,42 +1,28 @@
-// const emailBtn = document.getElementById('emailBtn');
-// const emailText = document.getElementById('emailText');
-// const emailBtnText = document.getElementById('emailBtnText');
+const container = document.getElementById('container');
+const pixBtn = document.getElementById('pixBtn');
+const pixArea = document.getElementById('pixArea');
 
-// emailBtn.addEventListener('click', () => {
-//     navigator.clipboard.writeText(emailText.innerText);
+pixBtn.addEventListener('click', () => {
+    container.classList.add('hidden');
+    pixArea.classList.remove('hidden');
+});
 
-//     emailBtnText.textContent = 'Copiado!';
+const back = document.getElementById('back');
 
-//     setTimeout(() => {
-//         emailBtnText.textContent = 'E-Mail';
-//     }, 1200);
-// });
+back.addEventListener('click', () => {
+    container.classList.remove('hidden');
+    pixArea.classList.add('hidden');
+});
 
-// const container = document.getElementById('container');
-// const btnPix = document.getElementById('btnPix');
-// const pix = document.getElementById('pix');
+const copyBtn = document.getElementById('copyBtn');
+const pixKey = document.getElementById('pixKey');
 
-// btnPix.addEventListener('click', () => {
-//     container.classList.add('hidden');
-//     pix.classList.remove('hidden');
-// });
+copyBtn.addEventListener('click', () => {
+    navigator.clipboard.writeText(pixKey.innerText);
 
-// const pixBack = document.getElementById('pixBack');
+    copyBtn.textContent = 'Copiado!';
 
-// pixBack.addEventListener('click', () => {
-//     container.classList.remove('hidden');
-//     pix.classList.add('hidden');
-// });
-
-// const pixBtn = document.getElementById('pixBtn');
-// const pixKey = document.getElementById('pixKey');
-
-// pixBtn.addEventListener('click', () => {
-//     navigator.clipboard.writeText(pixKey.innerText);
-
-//     pixBtn.textContent = 'Copiado!';
-
-//     setTimeout(() => {
-//         pixBtn.textContent = 'Copiar Chave Pix';
-//     }, 1200);
-// });
+    setTimeout(() => {
+        copyBtn.textContent = 'Copiar chave PIX';
+    }, 1200);
+});
