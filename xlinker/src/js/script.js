@@ -27,3 +27,17 @@ copyBtn.addEventListener('click', () => {
         copyBtn.textContent = 'Copiar chave PIX';
     }, 1200);
 });
+
+const carousel = document.getElementById('carousel');
+const arrowRight = document.getElementById('arrowRight');
+
+let scrollAmount = 0;
+
+arrowRight.addEventListener('click', () => {
+    scrollAmount += carousel.clientWidth;
+    carousel.scrollTo({
+        top: 0,
+        left: scrollAmount,
+        behavior: 'smooth'
+    });
+});
