@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>uLinker</title>
+    <title>xLinker</title>
 
     <link rel="stylesheet" href="./dist/output.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -31,19 +31,57 @@
     /></noscript>
     <!-- End Meta Pixel Code -->
 </head>
-<body class="font-lexend ">
-    <div class="shadow-md shadow-gray-300 flex justify-center py-3 md:py-4 px-5">
-        <header class="flex items-center justify-between w-[335px] md:w-[700px] xl:w-[1200px]">
-            <a href="">
-                <img class="h-8 md:hidden" src="./src/img/purple-icon-black-text.png" alt="">
-                <img class="hidden md:hi" src="" alt="">
-            </a>
+<body class="font-lexend">
+
     
-            <div class="flex items-center">
-                <button class="bg-[#8234E9] rounded-[10px] py-2 px-6 font-semibold shadow-md shadow-violet-950 text-white flex items-center justify-center border-2 border-transparent hover:border-[#8234E9] hover:bg-transparent hover:text-[#8234E9] duration-300">COMPRAR</button>
+    <header class="shadow-md shadow-gray-300 flex justify-center py-3 md:py-4 px-5">
+        <nav class="flex items-center justify-between w-[335px] md:w-[700px] xl:w-[1200px]">
+            <div>
+                <a href="">
+                    <img class="h-8 hidden md:block" src="./src/img/purple-icon-black-text.png" alt="">
+                    <img class="md:hidden h-8" src="./src/img/purple-icon-no-text.png" alt="">
+                </a>
             </div>
-        </header>
-    </div>
+            <div>
+                <ul class="hidden lg:flex items-center space-x-6">
+                    <li><a href="#home" class="hover:text-color-secondary ease-in duration-200">Home</a></li>
+                    <li><a href="#features" class="hover:text-color-secondary ease-in duration-200">Features</a></li>
+                    <li><a href="#testimonial" class="hover:text-color-secondary ease-in duration-200">Testimonial</a></li>
+                    <li><a href="#pricing" class="hover:text-color-secondary ease-in duration-200">Pricing</a></li>
+                    <li><a href="#blog" class="hover:text-color-secondary ease-in duration-200">Blog</a></li>
+                    <li><a href="#contact" class="hover:text-color-secondary ease-in duration-200">Contact</a></li>
+
+                    <li>
+                        <div class="flex items-center">
+                            <button class="bg-[#8234E9] rounded-[10px] py-2 px-6 font-semibold shadow-md shadow-violet-950 text-white flex items-center justify-center border-2 border-transparent hover:border-[#8234E9] hover:bg-transparent hover:text-[#8234E9] duration-300">COMPRAR</button>
+                        </div>
+                    </li> 
+                </ul>
+            </div>
+
+            <!-- Mobile screen  -->
+            <div id="hamburger" class="lg:hidden cursor-pointer z-50">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div id="menu" class="hidden bg-color-primary-dark h-[100vh] absolute inset-0">
+                <ul class="h-full grid place-items-center py-20">
+                    <li><a id="hLink" href="#home" class="hover:text-color-secondary ease-in duration-200">Home</a></li>
+                    <li><a id="hLink" href="#features" class="hover:text-color-secondary ease-in duration-200">Features</a></li>
+                    <li><a id="hLink" href="#testimonial" class="hover:text-color-secondary ease-in duration-200">Testimonial</a></li>
+                    <li><a id="hLink" href="#pricing" class="hover:text-color-secondary ease-in duration-200">Pricing</a></li>
+                    <li><a id="hLink" href="#blog" class="hover:text-color-secondary ease-in duration-200">Blog</a></li>
+                    <li><a id="hLink" href="#contact" class="hover:text-color-secondary ease-in duration-200">Contact</a></li>
+
+                    <li>
+                        <div class="flex items-center">
+                            <button class="bg-[#8234E9] rounded-[10px] py-2 px-6 font-semibold shadow-md shadow-violet-950 text-white flex items-center justify-center border-2 border-transparent hover:border-[#8234E9] hover:bg-transparent hover:text-[#8234E9] duration-300">COMPRAR</button>
+                        </div>
+                    </li> 
+                </ul>
+            </div>
+        </nav>
+    </header>
 
     <div class="grid place-items-center mt-20 duration-1000 scroll-animation px-5">
         <h1 class="text-lg font-medium text-[#8234E9]">FAQ</h1>

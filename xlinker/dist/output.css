@@ -614,6 +614,10 @@ video {
   margin-top: 0.5rem;
 }
 
+.mt-3{
+  margin-top: 0.75rem;
+}
+
 .mt-4{
   margin-top: 1rem;
 }
@@ -624,10 +628,6 @@ video {
 
 .mt-\[10px\]{
   margin-top: 10px;
-}
-
-.mt-3{
-  margin-top: 0.75rem;
 }
 
 .flex{
@@ -871,10 +871,6 @@ video {
   line-height: 2.5rem;
 }
 
-.text-\[15px\]{
-  font-size: 15px;
-}
-
 .text-base{
   font-size: 1rem;
   line-height: 1.5rem;
@@ -893,10 +889,6 @@ video {
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-\[16px\]{
-  font-size: 16px;
 }
 
 .font-light{
