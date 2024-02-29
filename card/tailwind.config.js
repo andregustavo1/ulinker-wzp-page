@@ -3,6 +3,10 @@ module.exports = {
   content: ["./src/**/*.{html,js}", "./index.html", "./profiles/**/*.html"],
   theme: {
     extend: {
+      colors: {
+        primary: '#444444',
+      },
+
       fontFamily: {
         lexend: ["Lexend Deca", "sans-serif"],
       },
@@ -10,3 +14,5 @@ module.exports = {
   },
   plugins: [],
 }
+
+

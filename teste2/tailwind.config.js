@@ -3,10 +3,27 @@ module.exports = {
   content: ["./src/**/*.{html,js}", "./index.html", "./profiles/**/*.html"],
   theme: {
     extend: {
+      colors: {
+        primary: '#F2882B',
+      },
+
       fontFamily: {
         lexend: ["Lexend Deca", "sans-serif"],
+      },
+
+      keyframes: {
+        blink: {
+        '0%': { opacity: '100%' },
+        '50%': { opacity: '0%' },
+        }
+      },
+
+      animation: {
+        blink: 'blink 1s linear infinite',
       },
     },
   },
   plugins: [],
 }
+
+

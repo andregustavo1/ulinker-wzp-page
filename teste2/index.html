@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xlinker</title>
+
+    <link rel="stylesheet" href="./dist/output.css">
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+	<link rel="icon" type="image/png" href="./src/img/favicon.png">
+
+    <script src="./src/js/script.js" defer></script>
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '353015710857434');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=353015710857434&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+</head>
+
+<body class="grid place-items-center font-lexend">
+    <div class="w-[345px] h-[80px] bg-[#F0F0F0] rounded-b-3xl"></div>
+    
+    <div class="flex justify-center items-center">
+        <img class="absolute mt-[10px] w-[130px] h-[130px] mx-auto rounded-full border-[4px] border-primary z-10" src="data:image/png;base64,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">
+    </div>
+
+    <div class=" w-[345px] h-[190px] bg-primary rounded-3xl text-white mt-2 pt-14">  
+
+        <h1 class="grid place-items-center text-3xl font-semibold mt-2">Burguer Mania</h1>
+
+        <p class="grid place-items-center font-light">Lanchonete e Restaurante</p>
+
+        <a class="mx-auto flex items-center justify-center mt-1 bg-white py-1 w-[305px] h-[46px] rounded-full text-xl text-primary font-medium shadow-xl" href="data:text/vcard;charset=utf-8,BEGIN:VCARD%0AVERSION:3.0%0AFN:xLinker%0ATEL;TYPE=CELL:+5511916005064%0AEMAIL:xlinker.company@xlinker.com.br%0AEND:VCARD"><i class="ri-add-circle-fill text-3xl mr-2"></i>SALVAR CONTATO</a>
+    </div>
+
+
+
+    <div id="pixArea" class=" w-[375px] mx-auto mt-2 mb-2">
+
+        <div id="key" class="mt-2 cursor-pointer">
+            <a id="copyBtn" class="mx-auto flex items-center justify-center bg-teal-500 py-3 w-[305px] rounded-full text-white text-xl font-medium shadow-xl">Copiar chave PIX</a> 
+            <div id="pixKey" class="hidden">11980000031</div>
+        </div>
+
+        <img class="mt-6 mx-auto" src="./src/img/pix-qrcode.png" alt="">
+    </div> 
+
+    <div id="container" class="grid place-items-center">
+    
+            <div class="grid place-items-center mt-4 mb-8">
+                <div class="bg-[#F0F0F0] w-[345px] rounded-2xl grid place-items-center pt-2 pb-4">
+                    <h1 class="text-lg pb-2">Nos contate!</h1>
+
+                    <div class="border-b-[1px] border-[#a4a4a4] w-[345px]"></div>
+
+                    <a class="flex items-center justify-center rounded-3xl shadow-neutral-500 shadow w-[305px] mt-4" href="https://wa.me/5511916005064" target="_blank">
+                        <i class="ri-whatsapp-line text-3xl rounded-l-3xl bg-green-500 h-[50px] w-[55px] grid place-items-center text-white"></i>
+                        <div class="text-lg grid place-items-center rounded-r-3xl bg-white h-[50px] w-[250px]">
+                            <p class="mr-2">11 98361-7767</p>
+                        </div>
+                    </a>
+
+                    <a class="flex items-center justify-center rounded-3xl shadow-neutral-500 shadow w-[305px] mt-2" href="mailto:xlinker.company@xlinker.com.br" target="_blank">
+                        <i class="ri-mail-send-line text-3xl rounded-l-3xl bg-red-500 h-[50px] w-[55px] grid place-items-center text-white"></i>
+                        <div class="text-lg grid place-items-center rounded-r-3xl bg-white h-[50px] w-[250px]">
+                            <p class="mr-2">contato@bgmania.com.br</p>
+                        </div>
+                    </a>
+
+                    <a class="flex items-center mt-2 bg-slate-600 py-1 px-4 rounded-full text-white font-light" href="tel:+5511916005064"><i class="ri-phone-fill text-xl mr-2"></i>LIGAR</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
