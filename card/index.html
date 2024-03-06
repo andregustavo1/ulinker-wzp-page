@@ -11,28 +11,10 @@
     <link rel="icon" href="./src/img/favicon.png" type="image/png">
     <link rel="shortcut icon" href="./src/img/favicon.png" type="image/png">
 
-    <script src="./src/js/index.js" defer></script>
-
-   <!-- Meta Pixel Code -->
-    <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '7263867637023858');
-        fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=7263867637023858&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Meta Pixel Code -->
+    <script src="./src/js/script.js" defer></script>
 </head>
-<body class="font-lexend">
-    <header class="fixed top-0 w-full z-50 h-[60px] bg-white shadow-md shadow- flex justify-center py-3 md:py-4 px-5">
+<body class="font-comfortaa">
+    <header class="w-full z-50 h-[60px] bg-white shadow-md shadow- flex justify-center py-3 md:py-4 px-5">
         <nav class="grid place-items-center w-[335px] md:w-[700px] xl:w-[1200px]">
             <div>
                 <a href="">
@@ -42,62 +24,229 @@
         </nav>
     </header>
 
-    <div class="grid place-items-center mt-[100px]">
+    <div class="grid place-items-center mt-[20px]">
         <div class="">
-            <img class="w-[250px]" src="./src/img/3dcards.png" alt="">
+            <img class="w-[300px]" src="./src/img/3dcards.png" alt="">
         </div>
 
         <div class="mt-8 w-[335px]">
-            <h1 class="text-3xl font-bold">Cartão Tecnológico</h1>
+            <h1 class="text-2xl font-bold">Cartão Tecnológico</h1>
             <!-- <p class="mt-2">Modernize suas conexões profissionais com nosso inovador cartão tecnológico. Substituindo os cartões de visita de papel.</p> -->
         </div>
 
-        <div class="mt-2 w-[335px] border-b-[1px] border-[#bbbbbb] pb-4">
-            <h1 class="text-2xl">R$ 67,00</h1>
+        <button id="btnReview" class="flex items-center w-[335px] mt-1">
+            <i class="ri-star-fill text-yellow-400"></i>
+            <i class="ri-star-fill text-yellow-400"></i>
+            <i class="ri-star-fill text-yellow-400"></i>
+            <i class="ri-star-fill text-yellow-400"></i>
+            <i class="ri-star-half-fill text-yellow-400"></i>
+
+            <p class="text-sm ml-2 text-neutral-500 hover:border-b-[1px] hover:border-b-neutral-500">(26 Avaliações)</p>
+        </button>
+
+        <div class="mt-4 w-[335px]">
+            <p class="text-sm text-neutral-500 line-through">R$ 119,90</p>
+            <h1 class="text-2xl font-bold">R$ 67,00</h1>
         </div>
 
-        <div class="flex gap-4 mt-4">
-            <button class="w-[106px] hover:bg-slate-200 border-2 hover:border-[#222] rounded-full py-1 hover:w-[115px] duration-200">Preto</button>
-            <button class="w-[106px] hover:bg-slate-200 border-2 hover:border-[#222] rounded-full py-1 hover:w-[115px] duration-200">Branco</button>
-        </div>
-
-        <div class="mt-8">
-            <div class="w-[335px] h-[208px] bg-[#111] rounded-xl relative">
-
+        <div class="bg-slate-100 rounded-md w-full grid place-items-center mt-4 py-8">
+            <div class="w-[335px]">
+                <p class="text-neutral-600 font-medium">Personalize seu cartão:</p>
             </div>
-        </div>
 
-        <div class="mt-4">
-            <input class="border-[1px] rounded-md border-[#bbbbbb] w-[300px] h-[40px]" type="text">
-        </div>
-    
-        <div class="w-[335px] grid place-items-center">
-            <a href="" target="_blank" class="bg-green-500 mt-4 w-[225px] rounded-[10px] gap-2 py-3 px-6 font-semibold shadow-md shadow-green-950 text-white flex items-center justify-center border-2 border-transparent hover:border-green-500 hover:bg-transparent hover:text-green-500 duration-300 cursor-pointer">COMPRE AGORA</a>
+            <div class="flex gap-4 mt-2 items-center">
+                <button id="btnBlack" class="w-[30px] h-[30px] rounded-full py-1 duration-200 selected box-shadow bg-neutral-900"></button>
+                <button id="btnWhite" class="w-[30px] h-[30px] border-2 border-neutral-200 rounded-full py-1 duration-200 bg-white"></button>
+            </div>
+
+            <div class="grid place-items-center mt-5">
+                <label class="bg-white w-[335px] h-[36px] flex items-center justify-center rounded-md border-[1px]" for="file-upload">
+                    Coloque o seu logo aqui<i class="ri-file-download-line ml-1 text-lg"></i>
+                </label>
+                <input id="file-upload" type="file" style="display:none;">
+            </div>
+
+            <div>
+                <div>
+                    <div id="cardBlackBack" class="mt-2 transform rotate-x-90">
+                        <div style="box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2), 0 4px 4px 0 rgba(0, 0, 0, 0.19);" class="w-[335px] h-[208px] bg-[#111] rounded-2xl px-2 grid place-items-center relative">
+                            <img class="absolute w-[36px] top-8 right-6" src="./src/img/purple-icon-no-text.png" alt="">
+            
+                            <div class="flex justify-center items-center">
+                                <img class="w-[64px]" src="./src/img/Qr Codes.png" alt="">
+                                <img class="w-[16px] ml-1" src="./src/img/nfc-white.png" alt="">
+                                <div class="bg-white h-[40px] border-[1px] border-white rounded-3xl ml-2"></div>
+                                <h1 id="nameBlackCard" class="text-white ml-2 text-xl font-comfortaa">SEU NOME AQUI</h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="cardBlackFront" class="mt-2 hidden">
+                        <div style="box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2), 0 4px 4px 0 rgba(0, 0, 0, 0.19);" class="w-[335px] h-[208px] bg-[#111] rounded-2xl px-2 grid place-items-center relative">
+                            <img class="absolute w-[16px] top-8 right-6" src="./src/img/nfc-white.png" alt="">
+        
+                            <div id="logo-black" class="flex items-center justify-center">
+                                <h1 class="text-xl text-white">SEU LOGO AQUI</h1>
+                                <img class="max-w-[225px] max-h-[100px]" id="logo-img-black" src="" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div id="cardWhiteBack" class="mt-2 hidden">
+                        <div style="box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2), 0 4px 4px 0 rgba(0, 0, 0, 0.19);" class="w-[335px] h-[208px] bg-[#fafafa] rounded-2xl px-2 grid place-items-center relative">
+                            <img class="absolute w-[36px] top-8 right-6" src="./src/img/purple-icon-no-text.png" alt="">
+            
+                            <div class="flex justify-center items-center">
+                                <img class="w-[64px]" src="./src/img/qrcode-white.png" alt="">
+                                <img class="w-[16px] ml-1" src="./src/img/nfc-black.png" alt="">
+                                <div class="bg-black h-[40px] border-[1px] border-black rounded-3xl ml-2"></div>
+                                <h1 id="nameWhiteCard" class=" ml-2 text-xl font-comfortaa">SEU NOME AQUI</h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="cardWhiteFront" class="mt-2 hidden">
+                        <div style="box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2), 0 4px 4px 0 rgba(0, 0, 0, 0.19);" class="w-[335px] h-[208px] bg-[#fafafa] rounded-2xl px-2 grid place-items-center relative">
+                            <img class="absolute w-[16px] top-8 right-6" src="./src/img/nfc-black.png" alt="">
+        
+                            <div id="logo-white" class="flex items-center justify-center">
+                                <h1 class="text-xl">SEU LOGO AQUI</h1>
+                                <img class="max-w-[225px] max-h-[100px]" id="logo-img-white" src="" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="rotate" class="mt-1 hover:bg-slate-200 w-[335px]  justify-center items-center rounded-md duration-200 flex">
+                <p class="">Olhar frente</p>
+                <i class="ri-arrow-go-back-fill ml-1 text-lg"></i>
+            </button>
+
+            <div class="mt-2">
+                <input id="inputName" class="border-[1px] rounded-md border-[#bbbbbb] w-[335px] h-[36px] px-2" type="text" placeholder="Coloque o nome do cartão aqui" maxlength="20">
+            </div>
         </div>
     </div>
 
-    <div class="footer rounded-t-[1rem] mt-10 md:mt-20 bg-[#111111]">
-        <div class="py-10 px-5 grid mx-auto text-white md:w-[700px] xl:w-[1200px]">
+    <div id="ctaBtn" class="grid place-items-center">
+        <a href="" target="_blank" class="bg-green-500 mt-4 w-[335px] rounded-[10px] gap-2 py-3 px-6 font-semibold shadow-md shadow-green-950 text-white flex items-center justify-center border-2 border-transparent hover:border-green-500 hover:bg-transparent hover:text-green-500 duration-300 cursor-pointer">COMPRE AGORA</a>
+    </div>
+
+    <div id="floatingButton" class="fixed bottom-0 bg-slate-50 shadow-up w-full h-[80px] grid place-items-center duration-300 ">
+        <div class="w-[335px] flex items-center justify-between">
+            <div>
+                <p class="text-sm text-neutral-500 line-through">R$ 119,90</p>
+                <h1 class="text-2xl font-bold text-green-600">R$ 67,00</h1>
+            </div>
+    
+            <div class="grid place-items-center">
+                <a href="" target="_blank" class="bg-green-500 w-[155px] rounded-[10px] gap-2 py-3 px-6 shadow-md shadow-green-950 text-white flex items-center justify-center border-2 border-transparent hover:border-green-500 hover:bg-transparent hover:text-green-500 duration-300 cursor-pointer font-bold">COMPRAR</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="review" class="grid place-items-center pt-10">
+        <h1 class="text-2xl font-bold">Avaliações</h1>
+
+        <div class="grid place-items-center mt-4 w-[335px] border-b-[1px] border-[#bbbbbb] pb-4">
+            <h1 class="text-5xl font-bold">4.5</h1>
+
+            <div class="flex items-center justify-center ">
+                <i class="ri-star-fill text-yellow-400 text-2xl"></i>
+                <i class="ri-star-fill text-yellow-400 text-2xl"></i>
+                <i class="ri-star-fill text-yellow-400 text-2xl"></i>
+                <i class="ri-star-fill text-yellow-400 text-2xl"></i>
+                <i class="ri-star-half-fill text-yellow-400 text-2xl"></i>
+            </div>
+
+            <button class="mt-4 w-[225px] font-bold bg-slate-200 py-2 rounded-md">AVALIAR PRODUTO
+
+            </button>
+        </div>
+
+        <div class="bg-slate-100 grid place-items-center mt-4 w-[335px] py-4 px-5 rounded-md ">
+            <div class="w-full border-b-[1px] border-neutral-500 pb-4"> 
+                <p class="text-neutral-600 font-medium text-sm">Fernando</p>
+
+                <div class="text-sm">
+                    <i class="ri-star-fill text-yellow-400"></i>
+                    <i class="ri-star-fill text-yellow-400"></i>
+                    <i class="ri-star-fill text-yellow-400"></i>
+                    <i class="ri-star-fill text-yellow-400"></i>
+                    <i class="ri-star-fill text-yellow-400"></i>
+                </div>
+
+                <p class="mt-2 text-sm">texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto</p>
+            </div>
+
+            <div class="w-full border-b-[1px] border-neutral-500 pb-4 mt-4"> 
+                <p class="text-neutral-600 font-medium text-sm">Gabriel</p>
+
+                <div class="text-sm">
+                    <i class="ri-star-fill text-yellow-400"></i>
+                    <i class="ri-star-fill text-yellow-400"></i>
+                    <i class="ri-star-fill text-yellow-400"></i>
+                    <i class="ri-star-fill text-yellow-400"></i>
+                    <i class="ri-star-half-fill text-yellow-400"></i>
+                </div>
+
+                <p class="mt-2 text-sm">texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto</p>
+            </div>
+
+            <div class="w-full border-b-[1px] border-neutral-500 pb-4 mt-4"> 
+                <p class="text-neutral-600 font-medium text-sm">Gabriel</p>
+
+                <div class="text-sm">
+                    <i class="ri-star-fill text-yellow-400"></i>
+                    <i class="ri-star-fill text-yellow-400"></i>
+                    <i class="ri-star-fill text-yellow-400"></i>
+                    <i class="ri-star-fill text-yellow-400"></i>
+                    <i class="ri-star-fill text-yellow-400"></i>
+                </div>
+
+                <p class="mt-2 text-sm">texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto</p>
+            </div>
+
+            <div class="w-full border-b-[1px] border-neutral-500 pb-4 mt-4"> 
+                <p class="text-neutral-600 font-medium text-sm">Gabriel</p>
+
+                <div class="text-sm">
+                    <i class="ri-star-fill text-yellow-400"></i>
+                    <i class="ri-star-fill text-yellow-400"></i>
+                    <i class="ri-star-fill text-yellow-400"></i>
+                    <i class="ri-star-fill text-yellow-400"></i>
+                    <i class="ri-star-fill text-yellow-400"></i>
+                </div>
+
+                <p class="mt-2 text-sm">texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto</p>
+            </div>
+
+            <div class="w-full mt-4"> 
+                <p class="text-neutral-600 font-medium text-sm">Gabriel</p>
+
+                <div class="text-sm">
+                    <i class="ri-star-fill text-yellow-400"></i>
+                    <i class="ri-star-fill text-yellow-400"></i>
+                    <i class="ri-star-fill text-yellow-400"></i>
+                    <i class="ri-star-fill text-yellow-400"></i>
+                    <i class="ri-star-fill text-yellow-400"></i>
+                </div>
+
+                <p class="mt-2 text-sm">texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto</p>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <div id="footer" class="rounded-t-[1rem] mt-10 md:mt-20 bg-[#111111]">
+        <div class="pt-10 pb-[120px] px-5 grid mx-auto text-white md:w-[700px] xl:w-[1200px]">
             <div class="grid items-center justify-center md:flex md:justify-between">
                 <div class="grid place-items-center w-[335px]">
                     <img class="w-[150px]" src="./src/img/purple-icon-white-text.png" alt="">
-                    <p style="-webkit-hyphens: auto; -ms-hyphens: auto; hyphens: auto;" class="mt-4 text-justify text-gray-400">A xLinker revoluciona a maneira como as pessoas se conectam, combinando o melhor do mundo digital e físico. Permitindo trocas instantâneas e simplificando conexões profissionais.</p>
-                </div>
-
-                <div class="grid place-items-center mt-4">
-                    <h1 class="text-2xl font-medium">Contato</h1>
-    
-                    <div class="mt-2 text-gray-400 grid place-items-center">
-                        <a href=" https://wa.me/551123780296" target="_blank" class="text-base flex items-center gap-1 hover:text-white">
-                            <i class="ri-whatsapp-line text-2xl"></i>
-                            <h1>11 2378-0296</h1>
-                        </a>
-
-                        <a href="" target="_blank" class="text-base flex items-center gap-1 hover:text-white">
-                            <i class="ri-instagram-line text-2xl"></i>
-                            <h1>ulinker_oficial</h1>
-                        </a>
-                    </div>
                 </div>
             </div>
             
@@ -108,7 +257,6 @@
                     <div>xLinker. Todos os direitos reservados 2024</div>
                 </div>
             </div>
-                
         </div>
     </div>
 

@@ -8,7 +8,7 @@ module.exports = {
       },
 
       fontFamily: {
-        lexend: ["Lexend Deca", "sans-serif"],
+        comfortaa: ['comfortaa', 'sans-serif']
       },
     },
   },
