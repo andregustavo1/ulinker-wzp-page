@@ -712,6 +712,10 @@ video {
   width: 36px;
 }
 
+.w-\[375px\]{
+  width: 375px;
+}
+
 .w-\[64px\]{
   width: 64px;
 }
@@ -727,38 +731,6 @@ video {
 
 .w-full{
   width: 100%;
-}
-
-.w-\[375px\]{
-  width: 375px;
-}
-
-.w-screen{
-  width: 100vw;
-}
-
-.w-\[\]{
-  width: ;
-}
-
-.w-\[365\]{
-  width: 365;
-}
-
-.w-\[365px\]{
-  width: 365px;
-}
-
-.w-\[370px\]{
-  width: 370px;
-}
-
-.w-\[374px\]{
-  width: 374px;
-}
-
-.w-\[37px\]{
-  width: 37px;
 }
 
 .max-w-\[225px\]{
@@ -1140,6 +1112,10 @@ video {
   animation: rotate 1s linear;
 }
 
+.hover\:cursor-pointer:hover{
+  cursor: pointer;
+}
+
 .hover\:border-b-\[1px\]:hover{
   border-bottom-width: 1px;
 }
@@ -1196,11 +1172,6 @@ video {
 }
 
 @media (min-width: 1280px){
-  .xl\:my-4{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-
   .xl\:mt-0{
     margin-top: 0px;
   }
