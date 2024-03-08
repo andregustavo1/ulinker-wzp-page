@@ -87,7 +87,6 @@ fileUpload.addEventListener('change', function() {
     if (cardBlackFront.classList.contains('hidden') && btnBlack.classList.contains('selected') || cardWhiteFront.classList.contains('hidden') && btnWhite.classList.contains('selected')) {
         btnRotate.click();
     }
-
 });
 
 const inputName = document.querySelector('#inputName');
@@ -124,3 +123,46 @@ const observer = new IntersectionObserver(function(entries) {
 }, { threshold: 0.1 });
 
 observer.observe(ctaBtn);
+
+const sliders = document.querySelectorAll('#slider img');
+const navs = document.querySelectorAll('#slider-nav a');
+
+navs.forEach((link) => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const sliderId = this.getAttribute('href');
+        const slider = document.querySelector(sliderId);
+        slider.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    });
+});
+
+const siliderImg = document.querySelectorAll('#slider-img a');
+
+siliderImg.forEach((link) => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const sliderId = this.getAttribute('href');
+        const slider = document.querySelector(sliderId);
+        slider.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    });
+});
+
+const observerNav = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const id = entry.target.id;
+            const nav = document.querySelector(`#slider-nav-${id.split('-')[1]}`);
+            nav.classList.add('bg-blue-500'); 
+            nav.classList.remove('bg-slate-200');
+        } else {
+            const id = entry.target.id;
+            const nav = document.querySelector(`#slider-nav-${id.split('-')[1]}`);
+            nav.classList.remove('bg-blue-500');
+            nav.classList.add('bg-slate-200');
+        }
+    });
+}, { threshold: 0.5 });
+
+sliders.forEach(slider => {
+    observerNav.observe(slider);
+});

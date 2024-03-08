@@ -570,30 +570,6 @@ video {
   top: 1.5rem;
 }
 
-.bottom-0{
-  bottom: 0px;
-}
-
-.right-0{
-  right: 0px;
-}
-
-.bottom-1{
-  bottom: 0.25rem;
-}
-
-.right-\[\]{
-  right: ;
-}
-
-.right-\[-10px\]{
-  right: -10px;
-}
-
-.right-\[-5px\]{
-  right: -5px;
-}
-
 .z-10{
   z-index: 10;
 }
@@ -683,42 +659,6 @@ video {
   height: 42px;
 }
 
-.h-\[\]{
-  height: ;
-}
-
-.h-\[32px\]{
-  height: 32px;
-}
-
-.h-\[3\]{
-  height: 3;
-}
-
-.h-\[31\]{
-  height: 31;
-}
-
-.h-\[50px\]{
-  height: 50px;
-}
-
-.h-\[24px\]{
-  height: 24px;
-}
-
-.h-\[48px\]{
-  height: 48px;
-}
-
-.h-\[16px\]{
-  height: 16px;
-}
-
-.h-\[60px\]{
-  height: 60px;
-}
-
 .max-h-0{
   max-height: 0px;
 }
@@ -739,12 +679,8 @@ video {
   width: 160px;
 }
 
-.w-\[200px\]{
-  width: 200px;
-}
-
-.w-\[235px\]{
-  width: 235px;
+.w-\[215px\]{
+  width: 215px;
 }
 
 .w-\[250px\]{
@@ -765,34 +701,6 @@ video {
 
 .w-full{
   width: 100%;
-}
-
-.w-\[2\]{
-  width: 2;
-}
-
-.w-\[24px\]{
-  width: 24px;
-}
-
-.w-\[220px\]{
-  width: 220px;
-}
-
-.w-\[275px\]{
-  width: 275px;
-}
-
-.w-\[260px\]{
-  width: 260px;
-}
-
-.w-\[215px\]{
-  width: 215px;
-}
-
-.w-\[2px\]{
-  width: 2px;
 }
 
 .max-w-\[1200px\]{
@@ -1070,11 +978,6 @@ video {
   padding-bottom: 1.25rem;
 }
 
-.py-1{
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-
 .pb-10{
   padding-bottom: 2.5rem;
 }
@@ -1149,22 +1052,6 @@ video {
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-\[32px\]{
-  font-size: 32px;
-}
-
-.text-\[48px\]{
-  font-size: 48px;
-}
-
-.text-\[40px\]{
-  font-size: 40px;
-}
-
-.text-\[42px\]{
-  font-size: 42px;
 }
 
 .font-bold{
@@ -1278,21 +1165,6 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.before\:grid::before{
-  content: var(--tw-content);
-  display: grid;
-}
-
-.before\:h-\[48px\]::before{
-  content: var(--tw-content);
-  height: 48px;
-}
-
-.before\:place-items-center::before{
-  content: var(--tw-content);
-  place-items: center;
-}
-
 .hover\:border-\[\#883CEB\]:hover{
   --tw-border-opacity: 1;
   border-color: rgb(136 60 235 / var(--tw-border-opacity));
@@ -1385,11 +1257,6 @@ video {
   .md\:py-4{
     padding-top: 1rem;
     padding-bottom: 1rem;
-  }
-
-  .md\:py-3{
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
   }
 
   .md\:text-2xl{
