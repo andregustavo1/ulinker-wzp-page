@@ -7,6 +7,8 @@ const cardWhiteFront = document.querySelector('#cardWhiteFront');
 const cardBlackBack = document.querySelector('#cardBlackBack');
 const cardWhiteBack = document.querySelector('#cardWhiteBack');
 
+const cTaLinks = document.querySelectorAll('.cTa');
+
 btnBlack.addEventListener('click', function() {
     btnBlack.classList.add('selected', 'box-shadow');
     btnWhite.classList.remove('selected', 'box-shadow');
@@ -14,8 +16,13 @@ btnBlack.addEventListener('click', function() {
     cardWhiteBack.classList.add('hidden');
     cardWhiteFront.classList.add('hidden');
 
+    cTaLinks.forEach(link => {
+        link.setAttribute('href', 'https://seguro.xlinker.com.br/r/OQAF5RPYUS');
+    });
+
     if (this.classList.contains('selected')) {
         pRotate.textContent = 'Olhar frente';
+        document.querySelector('.cTa').setAttribute('href', 'https://seguro.xlinker.com.br/r/OQAF5RPYUS');
     }
 
     if (cardBlackFront.classList.contains('hidden')) {
@@ -27,11 +34,17 @@ btnWhite.addEventListener('click', function() {
     btnWhite.classList.add('selected', 'box-shadow');
     btnBlack.classList.remove('selected', 'box-shadow');
 
+    cTaLinks.forEach(link => {
+        link.setAttribute('href', 'https://seguro.xlinker.com.br/r/FMY9BCCH96');
+    });
+
     cardBlackBack.classList.add('hidden');
     cardBlackFront.classList.add('hidden');
 
     if (this.classList.contains('selected')) {
         pRotate.textContent = 'Olhar frente';
+        document.querySelector('.cTa').setAttribute('href', 'https://seguro.xlinker.com.br/r/FMY9BCCH96');
+
     }
 
     if (cardWhiteFront.classList.contains('hidden')) {
