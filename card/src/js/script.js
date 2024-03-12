@@ -179,3 +179,7 @@ const observerNav = new IntersectionObserver(function(entries) {
 sliders.forEach(slider => {
     observerNav.observe(slider);
 });
+
+if (/Android/i.test(navigator.userAgent)) {
+    alert('O contato foi baixado. Por favor, abra o arquivo baixado para importar os contatos.');
+}
