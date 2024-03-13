@@ -26,6 +26,7 @@ pixBtn.addEventListener('click', () => {
 back.addEventListener('click', () => {
     container.classList.remove('hidden');
     pixArea.classList.add('hidden');
+    assArea.classList.add('hidden');
     back.classList.add('opacity-0');
 });
 
@@ -42,3 +43,12 @@ copyBtn.addEventListener('click', () => {
     }, 1200);
 });
 
+const assBtn = document.getElementById('assBtn');
+const assArea = document.getElementById('assArea');
+
+assBtn.addEventListener('click', () => {
+    container.classList.add('hidden');
+    assArea.classList.remove('hidden');
+    back.classList.remove('opacity-0');
+    window.scrollTo(0, 0);
+});
