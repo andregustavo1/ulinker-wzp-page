@@ -1,9 +1,6 @@
 {
-    "rewrites": [
-      {
-        "source": "/:number/",
-        "destination": "/:number"
-      }
+    "rewrites": [],
+    "redirects": [
+      { "source": "/:path+", "destination": "/:path+/" }
     ]
   }
-  
