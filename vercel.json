@@ -1,6 +1,0 @@
-{
-    "rewrites": [],
-    "redirects": [
-      { "source": "/:path+", "destination": "/:path+/" }
-    ]
-  }
