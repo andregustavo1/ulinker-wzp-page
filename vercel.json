@@ -1,0 +1,9 @@
+{
+    "rewrites": [
+      {
+        "source": "/:number/",
+        "destination": "/:number"
+      }
+    ]
+  }
+  
