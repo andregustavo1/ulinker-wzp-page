@@ -6,7 +6,7 @@
     <title>xLinker</title>
 
     <link rel="stylesheet" href="./dist/output.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
 
     <link rel="icon" href="./src/img/favicon.png" type="image/png">
     <link rel="shortcut icon" href="./src/img/favicon.png" type="image/png">
@@ -42,7 +42,7 @@
             </div>
 
             <div>
-                <a class="bg-[#883CEB] rounded-[10px] py-2 px-6 font-semibold shadow-md shadow-violet-950 text-white flex items-center justify-center border-2 border-transparent hover:border-[#883CEB] hover:bg-transparent hover:text-[#883CEB] duration-300" href="https://www.xlinker.com.br/card/">COMPRAR</a>
+                <a class="bg-[#883CEB] rounded-[10px] py-2 px-6 font-semibold shadow-md shadow-violet-950 text-white flex items-center justify-center border-2 border-transparent hover:border-[#883CEB] hover:bg-transparent hover:text-[#883CEB] duration-300" href="./card/index.html">COMPRAR</a>
             </div>
         </nav>
     </header>
@@ -50,23 +50,30 @@
     <div class="flex justify-center px-5 mt-24 mb-10 md:mt-40 md:mt20">
         <div class="grid items-center justify-center max-w-[1200px] md:flex md:flex-row-reverse">
             <div class="grid place-items-center md:w-[350px] xl:w-[600px]">
-                <img class="w-[285px] md:w-[300px] xl:w-[450px]" src="./src/img/hero-img.png" alt="">
+                <video autoplay loop muted playsinline>
+                    <source src="src/img/gif.celular.mp4" type="video/mp4">
+                    <!-- Fallback para navegadores que não suportam vídeo -->
+                    <img src="src/img/gif.celular.gif" alt="GIF" class="w-[285px] md:w-[300px] xl:w-[450px]">
+                </video>
+                
+
             </div>
 
             <div class="w-[335px] md:w-[350px] xl:w-[600px] ">
                 <div class="mt-4">
-                    <h1 class="text-[22px] font-bold md:text-3xl xl:text-[2.5rem] xl:leading-tight">O capitador de clientes que mais lota agenda das Empresas.</h1>
-                    <p class="xl:text-xl mt-2">A nova era da sofisticação e tecnologia que alanacou 10x mais negócios nos ultimos anos.</p>
+                    <h1 class="text-[22px] font-bold md:text-3xl xl:text-[2.5rem] xl:leading-tight">A ferramenta que alavancou mais de 20 mil Empresas do absoluto zero.</h1>
+                    <p class="xl:text-xl mt-2">Proporcionamos a nova era da <b>tecnologia</b>, <b>desing</b> e <b>vendas</b> para acelerar seu negócios.</p>
                 </div> 
 
-                <a href="https://www.xlinker.com.br/card/" class="cTa xl:w-[350px] bg-[#883CEB] mt-4 rounded-[10px] gap-2 py-3 px-6 font-semibold shadow-md shadow-green-950 text-white flex items-center justify-center border-2 border-transparent hover:border-[#883CEB] hover:bg-transparent hover:text-[#883CEB] duration-300 cursor-pointer">COMPRAR AGORA</a>
+                <a href="./card/index.html" class="cTa xl:w-[350px] bg-[#883CEB] mt-4 rounded-[10px] gap-2 py-3 px-6 font-semibold shadow-md shadow-green-950 text-white flex items-center justify-center border-2 border-transparent hover:border-[#883CEB] hover:bg-transparent hover:text-[#883CEB] duration-300 cursor-pointer">COMPRAR AGORA</a>
             </div>
         </div>   
     </div>
 
-    <div class="grid justify-center bg-[#222] text-white py-10 relative">
+    <div class="grid justify-center bg-[#222] text-white py-10 relative " style="border-radius: 45px;">
         <div class="grid place-items-center">
-            <h1 class="text-2xl text-center font-bold w-[335px] xl:w-full">Personalize toda empresa num único  lugar e se torne totalmente exclusivo.</h1>
+            <h1 class="text-2xl text-center font-bold w-[335px] xl:w-full">Personalize toda empresa num único  lugar.</h1>
+            <p class="text-sm text-neutral-300 text-center md:text-lg flex items-center">Arraste pro lado e veja nossos clientes.<i class="ri-arrow-right-double-line text-3xl"></i></p>
         </div>
 
         <div id="slider-wrapper" class="mt-4 w-[250px] mx-auto" style="scrollbar-width: none; -ms-overflow-style: none;">
@@ -83,171 +90,202 @@
             <a class="w-2 h-2 rounded-[50%] bg-white" href="#slider-3"></a>
         </div>
         
-        <div class="grid place-items-center items-center mt-4">
+        <div class="raf grid place-items-center items-center mt-4">
             <div class="flex justify-between w-[335px]">
-                <div class="grid place-items-center bg-gray-800 w-[100px] h-[100px] rounded-3xl">
+                <div class="grid place-items-center bg-[#883CEB] w-[100px] h-[100px] rounded-3xl">
                     <div class="grid place-items-center">
                         <i class="ri-whatsapp-line text-4xl"></i>
-                        <p class="mt-1">WhatsApp</p>
+                        <p class="mt-1">Contato</p>
                     </div>
                 </div>
     
-                <div class="grid place-items-center bg-gray-800 w-[100px] h-[100px] rounded-3xl">
+                <div class="raf grid place-items-center bg-[#883CEB] w-[100px] h-[100px] rounded-3xl">
                     <div class="grid place-items-center">
-                        <i class="ri-whatsapp-line text-4xl"></i>
-                        <p class="mt-1">WhatsApp</p>
+                        <svg class="w-[34px]" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                            <defs/>
+                            <g fill="#ffffff" fill-rule="evenodd">
+                              <path d="M112.57 391.19c20.056 0 38.928-7.808 53.12-22l76.693-76.692c5.385-5.404 14.765-5.384 20.15 0l76.989 76.989c14.191 14.172 33.045 21.98 53.12 21.98h15.098l-97.138 97.139c-30.326 30.344-79.505 30.344-109.85 0l-97.415-97.416h9.232zm280.068-271.294c-20.056 0-38.929 7.809-53.12 22l-76.97 76.99c-5.551 5.53-14.6 5.568-20.15-.02l-76.711-76.693c-14.192-14.191-33.046-21.999-53.12-21.999h-9.234l97.416-97.416c30.344-30.344 79.523-30.344 109.867 0l97.138 97.138h-15.116z"/>
+                              <path d="M22.758 200.753l58.024-58.024h31.787c13.84 0 27.384 5.605 37.172 15.394l76.694 76.693c7.178 7.179 16.596 10.768 26.033 10.768 9.417 0 18.854-3.59 26.014-10.75l76.989-76.99c9.787-9.787 23.331-15.393 37.171-15.393h37.654l58.3 58.302c30.343 30.344 30.343 79.523 0 109.867l-58.3 58.303H392.64c-13.84 0-27.384-5.605-37.171-15.394l-76.97-76.99c-13.914-13.894-38.172-13.894-52.066.02l-76.694 76.674c-9.788 9.788-23.332 15.413-37.172 15.413H80.782L22.758 310.62c-30.344-30.345-30.344-79.524 0-109.868"/>
+                            </g>
+                        </svg>
+                        <p class="mt-1">Area Pix</p>
                     </div>
                 </div>
     
-                <div class="grid place-items-center bg-gray-800 w-[100px] h-[100px] rounded-3xl">
+                <div class="raf grid place-items-center bg-[#883CEB] w-[100px] h-[100px] rounded-3xl">
                     <div class="grid place-items-center">
-                        <i class="ri-whatsapp-line text-4xl"></i>
-                        <p class="mt-1">WhatsApp</p>
+                        <i class="ri-layout-4-fill text-4xl"></i>
+                        <p class="mt-1">Catálogo</p>
                     </div>
                 </div>
             </div>
             
-            <div class="flex justify-between w-[335px] mt-4">
-                <div class="grid place-items-center bg-gray-800 w-[100px] h-[100px] rounded-3xl">
+            <div class="raf flex justify-between w-[335px] mt-4">
+                <div class="grid place-items-center bg-[#883CEB] w-[100px] h-[100px] rounded-3xl">
                     <div class="grid place-items-center">
-                        <i class="ri-whatsapp-line text-4xl"></i>
-                        <p class="mt-1">WhatsApp</p>
+                        <i class="ri-menu-line text-4xl"></i>
+                        <p class="mt-1">Cardápio</p>
                     </div>
                 </div>
     
-                <div class="grid place-items-center bg-gray-800 w-[100px] h-[100px] rounded-3xl">
+                <div class="raf grid place-items-center bg-[#883CEB] w-[100px] h-[100px] rounded-3xl">
                     <div class="grid place-items-center">
-                        <i class="ri-whatsapp-line text-4xl"></i>
-                        <p class="mt-1">WhatsApp</p>
+                        <i class="ri-news-line text-4xl"></i>
+                        <p class="mt-1">Planos</p>
                     </div>
                 </div>
-    
-                <div class="grid place-items-center bg-gray-800 w-[100px] h-[100px] rounded-3xl">
+
+                <div class="raf grid place-items-center bg-[#883CEB] w-[100px] h-[100px] rounded-3xl">
                     <div class="grid place-items-center">
-                        <i class="ri-whatsapp-line text-4xl"></i>
-                        <p class="mt-1">WhatsApp</p>
+                        <span style="font-size: 33px; margin-top: -7%;" >+</span>
+                        <p class="mt-1" style="margin-top: -7%;">Mais</p>
                     </div>
+                    
                 </div>
             </div>
-
-            <div class="flex justify-between w-[335px] mt-4">
-                <div class="grid place-items-center bg-gray-800 w-[100px] h-[100px] rounded-3xl">
-                    <div class="grid place-items-center">
-                        <i class="ri-phone-line text-4xl"></i>
-                        <p class="mt-1">Telefone</p>
-                    </div>
-                </div>
-    
-                <div class="grid place-items-center bg-gray-800 w-[100px] h-[100px] rounded-3xl">
-                    <div class="grid place-items-center">
-                        <i class="ri-whatsapp-line text-4xl"></i>
-                        <p class="mt-1">WhatsApp</p>
-                    </div>
-                </div>
-    
-                <div class="grid place-items-center bg-gray-800 w-[100px] h-[100px] rounded-3xl">
-                    <div class="grid place-items-center">
-                        <i class="ri-add-circle-line text-4xl"></i>
-                        <p class="mt-1">E mais!</p>
-                    </div>
-                </div>
             </div>
         </div>
-    </div>
-
-    <div class="grid justify-center bg-[#111] text-white pt-10 pb-10 xl:pb-20">
-        <div class="grid place-items-center">
-            <h1 class="text-xl text-center font-medium w-[335px] md:w-full md:text-2xl md:font-bold">Por que escolher a xLinker?</h1>
-            <p class="text-sm text-neutral-300 text-center md:text-lg">Veja Algumas comparações</p>
-        </div>
 
 
-        <div class="grid md:flex justify-center md:gap-[30px] xl:gap-[110px] xl:mt-10">
-            <div class="relative xl:scale-125">
-                <div style="border: 2px solid; border-image: linear-gradient(transparent, rgb(34 197 94), transparent) 1;" class="w-[335px] bg-[#0000008f] mt-4 grid px-6 py-5 rounded-xl border-x">
-    
-                    <h1 class="text-xl font-bold">xLinker</h1>
-    
-                    <div class="mt-2 z-10">
-                        <p class="flex items-center text-sm text-neutral-300"><i class="ri-checkbox-circle-fill text-green-500 text-base mr-2"></i>Inovador e moderno</p>
-                        <p class="flex items-center text-sm text-neutral-300"><i class="ri-checkbox-circle-fill text-green-500 text-base mr-2"></i>Dados salvos no celular do cliente</p>
-                        <p class="flex items-center text-sm text-neutral-300"><i class="ri-checkbox-circle-fill text-green-500 text-base mr-2"></i>O único cartão que você vai precisar</p>
-                        <p class="flex items-center text-sm text-neutral-300"><i class="ri-checkbox-circle-fill text-green-500 text-base mr-2"></i>Suas informações com um toque</p>
-                        <p class="flex items-center text-sm text-neutral-300"><i class="ri-checkbox-circle-fill text-green-500 text-base mr-2"></i>Mais barato que 100 cartões de papel</p>
-                    </div>
-                </div>
-    
-                <i class="ri-emotion-line absolute text-green-950 text-[135px] right-1 top-6 blur-sm rotate-[15deg]"></i>
+<div style="display: flex; justify-content: center; background-color:white; border-radius: 15px;">
+    <div class="bg-slate-100 mt-4 w-[335px] xl:w-[600px] py-4 px-5 rounded-md" style="width: 600px; background-color: white; ">
+        <div class="">
+        <div class="w-full border-b-[1px] border-neutral-500 pb-4" style="margin: 15px 0 5px 0; background-color: rgb(245, 245, 245); border-radius: 15px; padding: 9px  0 17px 13px; border:1px solid gainsboro; width: 340px; "> 
+        
+            <div style="display: flex;">
+                <img src="src/img/mulher-comentario2.jpg" alt="" style="width: 30px; height: 30px; border-radius: 30px;margin-right: 9px;">
+        <div style="display: flex; flex-direction: column;">
+              <div class="text-sm">
+                <i class="ri-star-fill text-yellow-400" style="color: rgb(34, 34, 32);"></i>
+                <i class="ri-star-fill text-yellow-400" style="color: rgb(34, 34, 32);"></i>
+                <i class="ri-star-fill text-yellow-400" style="color: rgb(34, 34, 32);"></i>
+                <i class="ri-star-fill text-yellow-400" style="color: rgb(34, 34, 32);"></i>
+                <i class="ri-star-fill text-yellow-400" style="color: rgb(34, 34, 32);"></i>
             </div>
-
-            <div class="relative xl:scale-125">
-                <div style="border: 2px solid; border-image: linear-gradient(transparent, rgb(239 68 68), transparent) 1;" class="w-[335px] bg-[#0000008f] mt-4 grid px-6 py-5 rounded-xl border-x">
-    
-                    <h1 class="text-xl font-bold">Cartão de Papel</h1>
-    
-                    <div class="mt-2 z-10">
-                        <p class="flex items-center text-sm text-neutral-300"><i class="ri-close-circle-fill text-red-500 text-base mr-2"></i>Comum e antigo</p>
-                        <p class="flex items-center text-sm text-neutral-300"><i class="ri-close-circle-fill text-red-500 text-base mr-2"></i>Cliente perde ou joga fora</p>
-                        <p class="flex items-center text-sm text-neutral-300"><i class="ri-close-circle-fill text-red-500 text-base mr-2"></i>Feito só em grandes quantidades</p>
-                        <p class="flex items-center text-sm text-neutral-300"><i class="ri-close-circle-fill text-red-500 text-base mr-2"></i>Precisa digitar cada informação</p>
-                        <p class="flex items-center text-sm text-neutral-300"><i class="ri-close-circle-fill text-red-500 text-base mr-2"></i>Compra constante de cartões</p>
-                    </div>
-                </div>
-    
-                <i class="ri-emotion-sad-line absolute text-red-950 text-[135px] right-1 top-6 blur-sm rotate-[-15deg]"></i>
-            </div>
-        </div>
-    </div>
-
-    <div class="grid place-items-center py-10 bg-slate-100">
-        <img class="w-[250px]" src="./src/img/3dcards.png" alt="">
-        <h1 class="text-xl mt-4 text-center w-[335px] md:w-[700px] font-bold md:text-2xl xl:leading-tight">Transformamos seu cartão de visitas em algo exclusivo e inovador.</h1>
-    </div>
-
-    <div class="mt-10 grid place-items-center px-5">
-        <div class="grid md:flex md:gap-4 justify-center">
-            <div class="flex gap-[15px] text-center">
-                <div class="grid place-items-center gap-1 bg-slate-200 py-4 px-2 w-[160px] h-[160px] rounded-2xl xl:scale-110 duration-1000 scroll-animation">
-                    <i class="ri-rocket-2-line text-4xl text-[#8234E9]"></i>
-                    <h1 class="flex items-center font-medium text-xl">Rápido</h1>
-                    <p class="mt-1 text-sm">Um toque para suas informações</p>
-                </div>
-
-                <div class="grid place-items-center gap-1 mt-[50px] bg-slate-200 py-4 px-2 w-[160px] h-[160px] rounded-2xl xl:scale-110 duration-1000 scroll-animation">
-                    <div>
-                        <i class="ri-android-line text-4xl text-[#8234E9]"></i>
-                        <i class="ri-apple-line text-4xl text-[#8234E9]"></i>
-                    </div>
-                    <h1 class="flex items-center font-medium text-xl">Acessível</h1>
-                    <p class="mt-1 text-sm">Compatível com Android e IOS</p>
-                </div>
-            </div>
-
-            <div class="flex gap-[15px] text-center mt-[-32px] md:mt-0">
-                <div class="grid place-items-center gap-1 md:mt-[100px] bg-slate-200 py-4 px-2 w-[160px] h-[160px] rounded-2xl xl:scale-110 duration-1000 scroll-animation">
-                    <i class="ri-checkbox-circle-line text-4xl text-[#8234E9]"></i>
-                    <h1 class="flex items-center font-medium text-xl">Fácil</h1>
-                    <p class="mt-1 text-sm">Sem app necessário para acessar o perfil</p>
-                </div>
-
-                <div class="grid place-items-center gap-1 mt-[50px] md:mt-[150px] bg-slate-200 py-4 px-2 w-[160px] h-[160px] rounded-2xl xl:scale-110 duration-1000 scroll-animation">
-                    <i class="ri-24-hours-fill text-4xl text-[#8234E9]"></i>
-                    <h1 class="flex items-center font-medium text-xl">24/7</h1>
-                    <p class="mt-1 text-sm">Seu perfil digital on-line 24 horas por dia</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="grid place-items-center mt-10 bg-gradient-to-r from-purple-900 to-violet-700 text-white py-5">
-        <div class="mt-4">
-            <h1 class="text-[22px] text-center w-[335px] font-bold md:text-3xl xl:text-[2.5rem] xl:leading-tight">Não deixe o futuro esperar.</h1>
-            <p class="xl:text-xl text-center w-[335px] mt-2">Peça seu cartão do futuro e se destaque em um mundo cada vez mais digital.</p>
+            <p class="text-neutral-600 font-medium text-sm"><b>Ana Júlia Camargo</b></p>
+            
+          
         </div> 
+    </div>
 
-        <a href="https://www.xlinker.com.br/card/" class="cTa xl:w-[350px] bg-white mt-4 rounded-[10px] gap-2 py-3 px-6 font-semibold shadow-md shadow-green-950 text-[#883CEB] flex items-center justify-center border-2 border-transparent border-white hover:bg-transparent hover:text-white duration-300 cursor-pointer">COMPRAR AGORA</a>
-    </div> 
+            <p class="mt-2 text-sm">Foi um divisor de águas, estava no começo do comércio e não tinha dinheiro para uma cotação mínima na gráfica. Recomendo a compra!</p>
+        </div>
+</div>
+    <div class="centralizacao-karina">
+        <div class="w-full border-b-[1px] border-neutral-500 pb-4 mt-4 "style="margin: 10px 0 5px 0; background-color: rgb(245, 245, 245); border-radius: 15px; padding: 9px  0 17px 13px; border:1px solid gainsboro; width: 340px;">
+    <div style="display: flex;">
+                <img src="src/img/mulher-comentario1.jpg" alt="" style="width: 30px; height: 30px; border-radius: 30px;margin-right: 9px;">
+        <div style="display: flex; flex-direction: column;">
+             <div class="text-sm">
+                <i class="ri-star-fill text-yellow-400" style="color: rgb(34, 34, 32);"></i>
+                <i class="ri-star-fill text-yellow-400" style="color: rgb(34, 34, 32);"></i>
+                <i class="ri-star-fill text-yellow-400" style="color: rgb(34, 34, 32);"></i>
+                <i class="ri-star-fill text-yellow-400" style="color: rgb(34, 34, 32);"></i>
+                <i class="ri-star-fill text-yellow-400" style="color: rgb(34, 34, 32);"></i>
+            </div>
+            <p class="text-neutral-600 font-medium text-sm"><b>Karina Murakami</b></p>
+            
+           
+        </div> 
+    </div>
+            <p class="mt-2 text-sm">Sou corretor e realmente consigo fechar várias visitas com a primeira impressão quando acessavam meu cartão pela bio do Instagram.</p>
+        </div>
+    </div>
+        <div class="w-full border-b-[1px] border-neutral-500 pb-4 mt-4" style="margin: 5px 0 5px 0; background-color: rgb(245, 245, 245); border-radius: 15px; padding: 9px  0 17px 13px; border:1px solid gainsboro; width: 340px;"> 
+            <div style="display: flex;">
+                <img src="src/img/homem-comentario1.jpg" alt="" style="width: 30px; height: 30px; border-radius: 30px;margin-right: 9px;">
+        <div style="display: flex; flex-direction: column;">
+             <div class="text-sm">
+                <i class="ri-star-fill text-yellow-400" style="color: rgb(34, 34, 32);"></i>
+                <i class="ri-star-fill text-yellow-400" style="color: rgb(34, 34, 32);"></i>
+                <i class="ri-star-fill text-yellow-400" style="color: rgb(34, 34, 32);"></i>
+                <i class="ri-star-fill text-yellow-400" style="color: rgb(34, 34, 32);"></i>
+                <i class="ri-star-fill text-yellow-400" style="color: rgb(34, 34, 32);"></i>
+            </div>
+            <p class="text-neutral-600 font-medium text-sm"><b>Gustavo Peres Armond</b></p>
+            
+           
+        </div> 
+    </div>
 
+            <p class="mt-2 text-sm">Sempre tive muitas ideias para alavancar minha marca, mas nunca soube transforma-las em algo lucrativo. A Xlinker mudou isso!</p>
+        </div>
+
+    </div>
+</div>
+    <div style="display: flex; justify-content: center;">
+        <p>
+            <img src="src/img/imagensdoslogos.jpg" alt="">
+        </p>
+    </div>
+<!--Fim da Area dos Clientes-->
+
+    <!-- <h1 class="text-xl mt-4 text-center w-[335px] md:w-[700px] font-bold md:text-2xl xl:leading-tight texto-cartao" style="margin-left: 33%; font-size: 30px;">Se destaque da concorrência
+    antes dela chegar.</h1>
+    <p class="paragrafo-cartao" style="font-size: 18px; margin-left: 44%; margin-top: 10px">O futuro hoje em sua mao</p> -->
+
+    <div style="display: flex; flex-direction: column; justify-content: center; height: 150px; margin:0 15px 0 15px;">
+        <h1 class="text-xl mt-4 text-center font-bold md:text-2xl xl:leading-tight texto-cartao">Se destaque da concorrência
+            antes dela chegar.</h1>
+        <div style="display: flex; justify-content: center;">
+            <p class="paragrafo-cartao">O futuro hoje em sua mao</p>
+        </div>
+    </div>
+
+    <div style="display: flex; justify-content: center; margin-bottom: 2%;">
+        <a href="./card/index.html" class="cTa xl:w-[350px] bg-[#883CEB] mt-4 rounded-[10px] gap-2 py-3 px-6 font-semibold shadow-md shadow-green-950 text-white flex items-center justify-center border-2 border-transparent hover:border-[#883CEB] hover:bg-transparent hover:text-[#883CEB] duration-300 cursor-pointer">COMPRAR AGORA</a>
+    </div>
+<div style="background-color:#e0e0e0 ;border-radius: 35px;">
+<div style="background-color: #e0e0e0; border-radius: 45px; padding: 40px;" >
+
+    <div style="width: 100%; display: flex; justify-content: center; background-color: #e0e0e0; border-radius: 35px 35px 0px 0;">
+        <img src="src/img/img1--1 (1).jpg" />
+    </div>
+    
+    <div style="width: 100%; display: flex; justify-content: center; background-color:  #e0e0e0; padding-bottom: 20px ;border-radius: 45px;">
+        <img src="./src/img/nova img.jpg" />
+    </div>
+    
+    <div style="width: 100%; display: flex; justify-content: center; background-color: #e0e0e0; padding-bottom: 20px ;border-radius: 45px;">
+        <img src="./src/img/img1--1 (3).jpg" />
+    </div>
+
+    <div style="width: 100%; display: flex; justify-content: center; background-color:  #e0e0e0;">
+        <img src="./src/img/img1--1 (2).jpg" />
+    </div>
+
+    
+ 
+</div>
+    <div class="grid place-items-center py-10 bg-slate-100" style="background-color: rgba(245, 245, 220, 0.8); border-radius: 35px;">
+    <section class="efeito-zoom">
+        <div class="centralizacao-imagem-com-texto" style=" background-color:white;width: 300px;height: 420px; border-radius: 15px;   box-shadow: 0px 0px 10px -7px;">
+            <div class="borda-imagem" style="height: 230px; background-color:white; padding: 20px 0px 0px 0px; border-radius:15px;" >
+                <img class="w-[250px]" src="./src/img/3dcards.png" alt="" style=" margin:10px 0 0  30px;  height: 200px;"> 
+            </div>
+
+            <div class="alinhamento-margin" style="margin:  15px 0px 10px 15px;">
+                <p><span style="color: rgb(83, 197, 117); font-size: 28px;"> <b>R$ 79,90  </b></span><del style="color:rgb(219, 214, 214) ;">R$ 119,90</del></p>
+                <p> Pague em até 6x de <span style="color: rgb(187, 17, 187); font-weight: bold;">13,90</span></p>
+                
+                <div class="flex items-center">
+                    <i class="ri-star-fill text-yellow-400" style="color: rgb(245, 245, 5)"></i>
+                    <i class="ri-star-fill text-yellow-400" style="color: rgb(245, 245, 5)"></i>
+                    <i class="ri-star-fill text-yellow-400" style="color: rgb(245, 245, 5)"></i>
+                    <i class="ri-star-fill text-yellow-400" style="color: rgb(245, 245, 5)"></i>
+                    <i class="ri-star-fill text-yellow-400" style="color: rgb(245, 245, 5)"></i>
+                    <span>(14 Avaliações)</span>
+                </div>
+                      
+            </div>
+            <span class="frete" style="color: rgb(83, 197, 117);margin: 25px 0 0 15px ; font-size: 20px;"><b>Frete Grátis</b></span>
+            
+        </div>
+        
+      </section>
+      <a href="./card/index.html" class="cTa xl:w-[350px] bg-[#883CEB] mt-4 rounded-[10px] gap-2 py-3 px-6 font-semibold shadow-md shadow-green-950 text-white flex items-center justify-center border-2 border-transparent hover:border-[#883CEB] hover:bg-transparent hover:text-[#883CEB] duration-300 cursor-pointer">PERSONALIZAR</a>
+    </div>
+</div>
     <div class="grid place-items-center mt-10 md:mt-20 duration-1000 scroll-animation px-5">
         <h1 class="text-lg font-medium text-[#883CEB]">FAQ</h1>
         <h1 class="text-xl font-medium">Perguntas Frequentes</h1>
