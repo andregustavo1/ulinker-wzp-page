@@ -1,81 +1,115 @@
+const menuButton = document.getElementById("menu-btn");
+const menu = document.querySelector("#menu");
+var icon = document.querySelector("#menu-btn i");
+const header = document.querySelector("header");
 
+menuButton.addEventListener("click", function () {
+    header.classList.toggle("border-slate-300");
+    header.classList.toggle("border-transparent");
+    menu.classList.toggle("max-h-[352px]");
+    menu.classList.toggle("max-h-0");
+    menu.classList.toggle("open");
+    icon.classList.toggle("ri-menu-line");
+    icon.classList.toggle("ri-close-large-line");
+});
 
+document.addEventListener('click', function(event) {
+
+    if (!menu.contains(event.target) && !header.contains(event.target) && menu.classList.contains("open")) {
+        header.classList.remove("border-slate-300");
+        header.classList.add("border-transparent");
+        menu.classList.remove("max-h-[352px]", "open");
+        menu.classList.add("max-h-0");
+        icon.classList.remove("ri-close-large-line");
+        icon.classList.add("ri-menu-line");
+    }
+});
 
 // // Code for animation scroll
-// const observer = new IntersectionObserver((entries) => {
-//     entries.forEach((entry) => {
-//         console.log(entry)
-//         if (entry.isIntersecting) {
-//             entry.target.classList.add('opacity-100');
-//             entry.target.classList.add('translate-x-0');
-//         } else {
-//             entry.target.classList.remove('opacity-100');
-//             entry.target.classList.remove('translate-x-0');
-//         }
-//     });
-// });
-
-// const elements = document.querySelectorAll('.scroll-animation');
-// elements.forEach((el) => observer.observe(el));
-
-
-// const scrollButton = document.getElementById("scrollButton");
-// const destiny = document.getElementById("destiny");
-
-// scrollButton.addEventListener("click", function () {
-//   const duration = 500; 
-
-//   const offset = destiny.getBoundingClientRect().top;
-//   const startPosition = window.pageYOffset;
-//   const startTime = performance.now();
-
-//   const scroll = (currentTime) => {
-//     const elapsedTime = currentTime - startTime;
-//     const progress = Math.min(elapsedTime / duration, 1);
-
-//     window.scrollTo(0, startPosition + offset * progress);
-
-//     if (progress < 1) {
-//       requestAnimationFrame(scroll);
-//     }
-//   };
-
-//   requestAnimationFrame(scroll);
-// });
-
-// const ctaElements = document.querySelectorAll('.cTa');
-// const destiny2 = document.getElementById("destiny2");
-
-// ctaElements.forEach(cta => {
-//   cta.addEventListener("click", function () {
-//     const offset = destiny2.getBoundingClientRect().top;
-//     const startPosition = window.pageYOffset;
-//     const duration = 800; // Duração da animação em milissegundos
-//     const startTime = performance.now();
-
-//     const scroll = (currentTime) => {
-//       const elapsedTime = currentTime - startTime;
-//       const progress = Math.min(elapsedTime / duration, 1);
-
-//       window.scrollTo(0, startPosition + offset * progress);
-
-//       if (progress < 1) {
-//         requestAnimationFrame(scroll);
-//       }
-//     };
-
-//     requestAnimationFrame(scroll);
-//   });
-// });
-
-document.querySelectorAll('#slider-nav a').forEach((link) => {
-    link.addEventListener('click', function(e) {
-        e.preventDefault();
-        const sliderId = this.getAttribute('href');
-        const slider = document.querySelector(sliderId);
-        slider.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting) {
+            entry.target.classList.remove('opacity-0');
+            entry.target.classList.remove('-translate-x-full');
+            entry.target.classList.remove('translate-x-full');
+        }
     });
 });
+
+const elements = document.querySelectorAll('.scroll-animation');
+elements.forEach((el) => observer.observe(el));
+
+let intervalId;
+
+const startInterval = () => {
+  clearInterval(intervalId);
+  intervalId = setInterval(() => {
+    update();
+  }, 3000);
+};
+
+const carouselList = document.querySelector('#carouselList');
+const carouselItems = document.querySelectorAll('.carousel__item');
+const elems = Array.from(carouselItems);
+
+carouselList.addEventListener('click', function (event) {
+  var newActive = event.target;
+  if (newActive.tagName === 'IMG') {
+    newActive = newActive.closest('.carousel__item');
+  }
+  var isItem = newActive && newActive.classList.contains('carousel__item');
+
+  if (!isItem || newActive.classList.contains('carousel__item_active')) {
+    return;
+  };
+  
+  update(newActive);
+  startInterval(); // reset the interval when an image is clicked
+});
+
+const update = function(newActive) {
+  const newActivePos = newActive ? newActive.dataset.pos : 1;
+
+  const current = elems.find((elem) => elem.dataset.pos == 0);
+  const prev = elems.find((elem) => elem.dataset.pos == -1);
+  const next = elems.find((elem) => elem.dataset.pos == 1);
+  const first = elems.find((elem) => elem.dataset.pos == -2);
+  const last = elems.find((elem) => elem.dataset.pos == 2);
+  
+  current.classList.remove('carousel__item_active');
+  
+  [current, prev, next, first, last].forEach(item => {
+    var itemPos = item.dataset.pos;
+
+    item.dataset.pos = getPos(itemPos, newActivePos)
+  });
+};
+
+const getPos = function (current, active) {
+  const diff = current - active;
+
+  if (Math.abs(current - active) > 2) {
+    return -current
+  }
+
+  return diff;
+}
+
+startInterval(); // start the interval when the page loads
+
+const slider = document.getElementById('slider');
+const next = document.getElementById('next');
+const prev = document.getElementById('prev');
+
+next.addEventListener('click', function() {
+    slider.scrollLeft += 345;
+});
+
+prev.addEventListener('click', function() {
+    slider.scrollLeft -= 345;
+});
+
 
 const faq1 = document.getElementById("faq1");
 const faqAnswer1 = document.getElementById("faqAnswer1");
