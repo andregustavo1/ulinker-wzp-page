@@ -179,3 +179,21 @@ const observerNav = new IntersectionObserver(function(entries) {
 sliders.forEach(slider => {
     observerNav.observe(slider);
 });
+
+const addButton = document.querySelector('#add');
+const subButton = document.querySelector('#sub');
+const quantityElement = document.querySelector('#quantity');
+
+addButton.addEventListener('click', function() {
+  let quantity = parseInt(quantityElement.textContent, 10);
+  quantity += 1;
+  quantityElement.textContent = quantity;
+});
+
+subButton.addEventListener('click', function() {
+  let quantity = parseInt(quantityElement.textContent, 10);
+  if (quantity > 1) {
+    quantity -= 1;
+    quantityElement.textContent = quantity;
+  }
+});

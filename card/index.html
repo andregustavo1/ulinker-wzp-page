@@ -25,7 +25,7 @@
 
     <div class="grid place-items-center mt-14 overflow-x-hidden">
         <div class="grid xl:flex">
-            <div class="xl:flex justify-center xl:w-[800px] xl:h-[500px] gap-20">
+            <div class="xl:flex justify-center xl:w-[800px] xl:h-[500px] gap-20 overflow-x-hidden">
                 <div id="slider-img" class="z-10 hidden xl:grid">
                     <a id="slider-img-1" class="" href="#slider-1">
                         <img class="w-[70px] h-[70px] duration-200 hover:opacity-60" src="../card/src/img/black-cards.png" alt="">
@@ -100,9 +100,10 @@
                     </div>
                 </div>
 
-                <div class="bg-slate-100 rounded-md w-[375px] xl:w-[400px] grid place-items-center mt-4 py-8 ">
+                <div class="bg-slate-100 rounded-md w-[375px] xl:w-[400px] grid place-items-center mt-4 py-8 overflow-x-hidden">
                     <div class="w-[335px] xl:w-[400px] xl:grid place-items-center">
-                        <p class="text-neutral-600 xl:text-neutral-600 font-medium xl:text-2xl">Personalize seu cartão:</p>
+                        <p class="font-medium xl:text-2xl">Personalize seu cartão:</p>
+                        <p class="text-sm xl:text-base xl:text-center text-neutral-600">(Apenas prévia)</p>
                     </div>
         
                     <div class="flex gap-4 mt-2 xl:mt-4 items-center">
@@ -181,15 +182,20 @@
                     </div>
                 </div>
 
-                <div id="ctaBtn" class="grid place-items-center">
-                    <a href="https://seguro.xlinker.com.br/r/OQAF5RPYUS" class="cTa bg-green-500 my-4 w-[335px] xl:w-[400px] rounded-[10px] gap-2 py-3 px-6 font-semibold shadow-md shadow-green-950 text-white flex items-center justify-center border-2 border-transparent hover:border-green-500 hover:bg-transparent hover:text-green-500 duration-300 cursor-pointer">COMPRE AGORA</a>
-                    
+                <div class="flex justify-between items-center px-5 gap-4">
+                    <div class="flex justify-center items-center gap-2 border border-slate-400 rounded-xl px-3 h-[52px]">
+                        <button id="sub" class="text-xl"><i class="ri-subtract-line"></i></button>
+                        <h1 id="quantity" class="w-[20px] grid justify-center">1</h1>
+                        <button id="add" class="text-xl"><i class="ri-add-line"></i></button>
+                    </div>
+
+                    <a id="ctaBtn" href="https://seguro.xlinker.com.br/r/OQAF5RPYUS" class="cTa bg-green-500 w-full my-4 rounded-[10px] gap-2 py-3 px-6 font-semibold shadow-md shadow-green-950 text-white flex items-center justify-center border-2 border-transparent hover:border-green-500 hover:bg-transparent hover:text-green-500 duration-300 cursor-pointer">COMPRE AGORA</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <div id="floatingButton" class="fixed bottom-0 bg-slate-50 shadow-up w-full h-[80px] grid place-items-center duration-300 xl:hidden">
+    <div id="floatingButton" class="fixed bottom-0 bg-slate-50 shadow-up w-full h-[80px] grid place-items-center duration-300 xl:hidden overflow-x-hidden">
         <div class="w-[335px] flex items-center justify-between">
             <div>
                 <p class="text-sm text-neutral-500 line-through">R$ 119,90</p>
@@ -292,6 +298,7 @@
                 <p class="mt-2 text-sm">Estou extremamente satisfeito com meu cartão tecnológico. Sua eficiência e conveniência superaram minhas expectativas. Recomendo a todos que buscam uma solução moderna e confiável.</p>
             </div>
         </div>
+    </div>
         
     <div id="footer" class="rounded-t-[1rem] mt-10 xl:mt-20 bg-[#111111]">
         <div class="pt-10 pb-[120px] xl:pb-10 px-5 grid place-items-center mx-auto text-white md:w-[700px] xl:w-[1200px]">

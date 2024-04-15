@@ -25,16 +25,24 @@ document.addEventListener('click', function(event) {
     }
 });
 
-// // Code for animation scroll
+document.querySelector('.btnFaq').addEventListener('click', function() {
+  document.getElementById('faq').scrollIntoView({
+      behavior: 'smooth'
+  });
+});
+
+// Code for animation scroll
 const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        console.log(entry)
-        if (entry.isIntersecting) {
-            entry.target.classList.remove('opacity-0');
-            entry.target.classList.remove('-translate-x-full');
-            entry.target.classList.remove('translate-x-full');
-        }
-    });
+  entries.forEach((entry) => {
+      console.log(entry)
+      if (entry.isIntersecting) {
+          entry.target.classList.remove('opacity-0');
+          entry.target.classList.remove('-translate-x-full');
+          entry.target.classList.remove('translate-x-full');
+      }
+  });
+}, {
+  rootMargin: '-30% 0px'
 });
 
 const elements = document.querySelectorAll('.scroll-animation');
@@ -99,17 +107,39 @@ const getPos = function (current, active) {
 startInterval(); // start the interval when the page loads
 
 const slider = document.getElementById('slider');
+const slider1 = document.getElementById('slider-1');
+const slider2 = document.getElementById('slider-2');
+const slider3 = document.getElementById('slider-3');
 const next = document.getElementById('next');
 const prev = document.getElementById('prev');
 
+let currentSlider = 1;
+
 next.addEventListener('click', function() {
-    slider.scrollLeft += 345;
+    if (currentSlider === 1) {
+        slider.scrollTo({ left: slider2.offsetLeft, behavior: 'smooth' });
+        currentSlider = 2;
+    } else if (currentSlider === 2) {
+        slider.scrollTo({ left: slider3.offsetLeft, behavior: 'smooth' });
+        currentSlider = 3;
+    } else if (currentSlider === 3) {
+        slider.scrollTo({ left: slider1.offsetLeft, behavior: 'smooth' });
+        currentSlider = 1;
+    }
 });
 
 prev.addEventListener('click', function() {
-    slider.scrollLeft -= 345;
+    if (currentSlider === 1) {
+        slider.scrollTo({ left: slider3.offsetLeft, behavior: 'smooth' });
+        currentSlider = 3;
+    } else if (currentSlider === 2) {
+        slider.scrollTo({ left: slider1.offsetLeft, behavior: 'smooth' });
+        currentSlider = 1;
+    } else if (currentSlider === 3) {
+        slider.scrollTo({ left: slider2.offsetLeft, behavior: 'smooth' });
+        currentSlider = 2;
+    }
 });
-
 
 const faq1 = document.getElementById("faq1");
 const faqAnswer1 = document.getElementById("faqAnswer1");

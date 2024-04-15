@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>xLinker</title>
 
-    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="dist/output.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
 
-    <link rel="icon" href="./src/img/favicon.png" type="image/png">
-    <link rel="shortcut icon" href="./src/img/favicon.png" type="image/png">
+    <link rel="icon" href="src/img/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="src/img/favicon.png" type="image/png">
 
     <script src="./src/js/index.js" defer></script>
 
@@ -17,16 +17,16 @@
 <body class="font-lexend overflow-x-hidden">
     <header class="w-full bg-white z-10 shadow-md flex justify-center py-3 md:py-4 border-b-[1px] border-transparent duration-500">
         <nav class="flex items-center justify-between w-full max-w-[1200px] px-5">
-            <div class="flex gap-5">
+            <div class="flex gap-4">
                 <div class="grid place-items-center">
                     <a href="">
-                        <img class="h-8 hidden md:block" src="./src/img/purple-icon-black-text.png" alt="">
-                        <img class="md:hidden h-8" src="./src/img/purple-icon-no-text.png" alt="">
+                        <img class="h-8 hidden md:block" src="src/img/purple-icon-black-text.png" alt="">
+                        <img class="md:hidden h-8" src="src/img/purple-icon-no-text.png" alt="">
                     </a>
                 </div>
                 
                 <div class="grid place-items-center xl:hidden">
-                    <div class="grid place-items-center w-[2px] h-[32px] bg-gray-700"></div>
+                    <div class="grid place-items-center w-[2px] h-full bg-gray-700"></div>
                 </div>
     
                 <div class="grid place-items-center xl:hidden">
@@ -35,19 +35,26 @@
             </div>
 
             <div class="flex items-center">
-                <ul class="hidden xl:flex items-center gap-6">
-                    <li class=""><a href="#faq" class="text-gray-700 pb-[2px] border-b-2 border-transparent hover:border-gray-700 duration-300">Texto</a></li>
-                    <li class=""><a href="#faq" class="text-gray-700 pb-[2px] border-b-2 border-transparent hover:border-gray-700 duration-300">Texto</a></li>
-                    <li class=""><a href="#faq" class="text-gray-700 pb-[2px] border-b-2 border-transparent hover:border-gray-700 duration-300">Texto</a></li>
-                    <li class=""><a href="#faq" class="text-gray-700 pb-[2px] border-b-2 border-transparent hover:border-gray-700 duration-300">FAQ</a></li>
+                <ul class="hidden xl:flex items-center gap-7">
+                    <li class="">
+                        <button class="btnFaq text-gray-700 pb-[2px] border-b-2 border-transparent hover:border-gray-700 duration-300">Perguntas Frequêntes</button>
+                    </li>
+
+                    <li class="">
+                        <button class="text-gray-700 pb-[2px] border-b-2 border-transparent hover:border-gray-700 duration-300">Para Empresas</button>
+                    </li>
+
+                    <li class="">
+                        <button class="text-gray-700 pb-[2px] border-b-2 border-transparent hover:border-gray-700 duration-300">xLinker Premium</button>
+                    </li>
                 </ul>
 
                 <div class="xl:grid place-items-center hidden mx-6">
-                    <div class="grid place-items-center w-[2px] h-[32px] bg-gray-700"></div>
+                    <div class="grid place-items-center w-[2px] h-[36px] bg-gray-700 rounded-md"></div>
                 </div>
 
                 <div class="">
-                    <a class="bg-[#883CEB] rounded-full py-2 px-6 xl:px-12 font-semibold shadow-md shadow-violet-950 text-white flex items-center justify-center border-2 border-transparent hover:border-[#883CEB] hover:bg-transparent hover:text-[#883CEB] duration-300" href="./card/index.html">COMPRAR<i class="ml-1 text-lg ri-arrow-right-s-line"></i></a>
+                    <a class="bg-[#883CEB] rounded-full py-2 px-6 xl:px-12 font-semibold shadow-md shadow-violet-950 text-white flex items-center justify-center border-2 border-transparent hover:border-[#883CEB] hover:bg-transparent hover:text-[#883CEB] duration-300" href="/page/card/index.html">COMPRAR<i class="ml-1 text-lg ri-arrow-right-s-line"></i></a>
                 </div>
             </div>
         </nav>
@@ -61,7 +68,7 @@
             <li class="border-b-[1px] border-slate-300 pb-5"><a href="#faq" class="text-gray-700">Perguntas Frequêntes</a></li>
 
             <div>
-                <a class="bg-green-600 rounded-2xl py-2 px-6 font-semibold shadow-md shadow-green-950 text-white flex items-center justify-center border-2 border-transparent hover:border-green-600 hover:bg-transparent hover:text-green-600 duration-300" href="./card/index.html"><i class="text-2xl font-normal mr-2 ri-whatsapp-line"></i>FALE CONOSCO</a>
+                <a class="bg-green-600 rounded-2xl py-2 px-6 font-semibold shadow-md  shadow-green-950 text-white flex items-center justify-center border-2 border-transparent hover:border-green-600 hover:bg-transparent hover:text-green-600 duration-300" href="card/index.html"><i class="text-2xl font-normal mr-2 ri-whatsapp-line"></i>FALE CONOSCO</a>
             </div>
         </ul>
     </div>
@@ -70,7 +77,7 @@
         <div class="grid place-items-center">
             <div class="grid justify-center xl:w-[1200px] px-5 md:justify-between md:flex md:flex-row-reverse">
                 <div class="grid place-items-center px-5 mx-auto">
-                    <img class="w-[250px] xl:w-[380px]" src="./src/img/hero-img.png" alt="">
+                    <img class="w-[250px] xl:w-[380px]" src="src/img/hero-img.png" alt="">
                 </div>
     
                 <div class="">
@@ -80,7 +87,7 @@
                     </div> 
     
                     <div class="md:flex items-center mt-4 md:mt-8 md:gap-3 xl:gap-5">
-                        <a href="https://www.xlinker.com.br/card" class="bg-[#883CEB] mx-auto md:mx-0 md:w-[250px] xl:w-[335px] rounded-full max-w-[520px] gap-2 py-3 px-6 font-semibold shadow-md shadow-green-950 text-white flex items-center justify-center border-2 border-transparent hover:border-[#883CEB] hover:bg-transparent hover:text-[#883CEB] duration-300 cursor-pointer">COMPRAR AGORA</a>
+                        <a href="https://www.xlinker.com.br/card" class="bg-[#883CEB] mx-auto md:mx-0 md:w-[250px] xl:w-[335px] rounded-full max-w-[520px] gap-2 py-3 px-6 font-semibold shadow-md shadow-violet-950 text-white flex items-center justify-center border-2 border-transparent hover:border-[#883CEB] hover:bg-transparent hover:text-[#883CEB] duration-300 cursor-pointer">COMPRAR AGORA</a>
     
                         <p class="text-gray-700 text-sm text-center md:text-start mt-4 md:mt-0 md:max-w-[200px] xl:max-w-[245px]">Exemplo: mais de 5.000 empresas compraram este produto</p> 
                     </div> 
@@ -91,7 +98,7 @@
 
     <div class="bg-slate-100 grid place-items-center py-10 xl:py-20"> 
         <div class="grid justify-center xl:w-[1200px] xl:justify-between xl:flex xl:flex-row-reverse">
-            <div id="carousel" class="grid items-center justify-center w-full max-w-[600px] mx-auto opacity-0 -translate-x-full duration-1000 scroll-animation delay-200 xl:delay-[400ms]">
+            <div id="carousel" class="grid items-center justify-center w-full max-w-[600px] mx-auto">
                 <div class="flex justify-center items-center gap-1">
                     <i class="text-2xl ri-arrow-left-double-line"></i>
                     <h1>Veja alguns de nossos clientes</h1>
@@ -99,15 +106,15 @@
                 </div>
 
                 <ul id="carouselList" class="flex relative justify-center w-full h-[302px] xl:h-[443px] mt-4" style="perspective: 300px;">
-                    <li id="carouselItem" class="carousel__item flex justify-center items-center w-[150px] xl:w-[220px] h-auto absolute duration-300 ease-in cursor-pointer" style="box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5);" data-pos="-2"><img src="/src/img/perfil1.jpeg" alt=""></li>
-                    <li id="carouselItem" class="carousel__item flex justify-center items-center w-[150px] xl:w-[220px] h-auto absolute duration-300 ease-in cursor-pointer" style="box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5);" data-pos="-1"><img src="/src/img/perfil1.jpeg" alt=""></li>
-                    <li id="carouselItem" class="carousel__item flex justify-center items-center w-[150px] xl:w-[220px] h-auto absolute duration-300 ease-in cursor-pointer" style="box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5);" data-pos="0"><img src="/src/img/perfil1.jpeg" alt=""></li>
-                    <li id="carouselItem" class="carousel__item flex justify-center items-center w-[150px] xl:w-[220px] h-auto absolute duration-300 ease-in cursor-pointer" style="box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5);" data-pos="1"><img src="/src/img/perfil1.jpeg" alt=""></li>
-                    <li id="carouselItem" class="carousel__item flex justify-center items-center w-[150px] xl:w-[220px] h-auto absolute duration-300 ease-in cursor-pointer" style="box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5);" data-pos="2"><img src="/src/img/perfil1.jpeg" alt=""></li>
+                    <li id="carouselItem" class="carousel__item flex justify-center items-center w-[150px] xl:w-[220px] h-auto absolute duration-300 ease-in cursor-pointer" style="box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5);" data-pos="-2"><img src="src/img/perfil1.jpeg" alt=""></li>
+                    <li id="carouselItem" class="carousel__item flex justify-center items-center w-[150px] xl:w-[220px] h-auto absolute duration-300 ease-in cursor-pointer" style="box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5);" data-pos="-1"><img src="src/img/perfil1.jpeg" alt=""></li>
+                    <li id="carouselItem" class="carousel__item flex justify-center items-center w-[150px] xl:w-[220px] h-auto absolute duration-300 ease-in cursor-pointer" style="box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5);" data-pos="0"><img src="src/img/perfil1.jpeg" alt=""></li>
+                    <li id="carouselItem" class="carousel__item flex justify-center items-center w-[150px] xl:w-[220px] h-auto absolute duration-300 ease-in cursor-pointer" style="box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5);" data-pos="1"><img src="src/img/perfil1.jpeg" alt=""></li>
+                    <li id="carouselItem" class="carousel__item flex justify-center items-center w-[150px] xl:w-[220px] h-auto absolute duration-300 ease-in cursor-pointer" style="box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5);" data-pos="2"><img src="src/img/perfil1.jpeg" alt=""></li>
                 </ul>
             </div>
 
-            <div class="grid mt-4 opacity-0 -translate-x-full duration-1000 scroll-animation delay-200">
+            <div class="grid mt-4">
                 <h1 class="text-2xl xl:text-3xl font-bold max-w-[750px] px-5 text-center">Headline Headline Headline.</h1>
                 <div class="mt-4 xl:mt-0">
                     <div class="flex justify-between w-screen px-5 max-w-[560px] gap-5">
@@ -159,7 +166,7 @@
                 
  
                 <div class="mt-8 xl:mt-0 px-5">
-                    <a href="https://www.xlinker.com.br/card" class="bg-[#883CEB] mx-auto md:mx-0 rounded-full gap-2 py-3 px-6 font-semibold shadow-md shadow-green-950 text-white flex items-center justify-center border-2 border-transparent hover:border-[#883CEB] hover:bg-transparent hover:text-[#883CEB] duration-300 cursor-pointer">COMPRAR AGORA</a>
+                    <a href="https://www.xlinker.com.br/card" class="bg-[#883CEB] mx-auto md:mx-0 rounded-full gap-2 py-3 px-6 font-semibold shadow-md  shadow-violet-950 text-white flex items-center justify-center border-2 border-transparent hover:border-[#883CEB] hover:bg-transparent hover:text-[#883CEB] duration-300 cursor-pointer">COMPRAR AGORA</a>
                 </div>
             </div>
         </div>
@@ -172,7 +179,7 @@
         </div>
 
         <div class="mt-8 xl:mt-16 xl:w-[1200px] overflow-x-hidden px-5 mx-auto">
-            <div class="grid justify-center items-center xl:flex xl:justify-between opacity-0 -translate-x-full duration-1000 scroll-animation delay-200">
+            <div class="grid justify-center items-center xl:flex xl:justify-between opacity-0 -translate-x-full duration-1000 scroll-animation">
                 <div>
                     <div class="flex justify-center items-center gap-4">
                         <div class="grid place-items-center w-[80px] h-[80px] border border-black shadow-md rounded-xl">
@@ -185,10 +192,10 @@
                     <p class="xl:text-lg text-gray-700 mt-2 xl:mt-4 max-w-[600px] text-center">Subheadline texto Subheadline texto Subheadline texto.</p> 
                 </div>
 
-                <img class="w-[255px] xl:w-[300px]  mt-4 mx-auto xl:mx-0" src="/src/img/3dcards.png" alt="">
+                <img class="w-[255px] xl:w-[300px]  mt-4 mx-auto xl:mx-0" src="src/img/3dcards.png" alt="">
             </div>
 
-            <div class="grid justify-center items-center xl:flex xl:justify-between xl:flex-row-reverse mt-8 xl:mt-0 overflow-x-hidden opacity-0 translate-x-full duration-1000 scroll-animation delay-200">
+            <div class="grid justify-center items-center xl:flex xl:justify-between xl:flex-row-reverse mt-8 xl:mt-0 overflow-x-hidden opacity-0 translate-x-full duration-1000 scroll-animation  ">
                 <div>
                     <div class="flex justify-center items-center gap-4">
                         <div class="grid place-items-center w-[80px] h-[80px] border border-black shadow-md rounded-xl">
@@ -201,10 +208,10 @@
                     <p class="xl:text-lg text-gray-700 mt-2 xl:mt-4 max-w-[600px] text-center">Subheadline texto Subheadline texto Subheadline texto.</p> 
                 </div>
 
-                <img class="w-[255px] xl:w-[300px]  mt-4 mx-auto xl:mx-0" src="/src/img/3dcards.png" alt="">
+                <img class="w-[255px] xl:w-[300px]  mt-4 mx-auto xl:mx-0" src="src/img/3dcards.png" alt="">
             </div>
 
-            <div class="grid justify-center items-center xl:flex xl:justify-between mt-8 xl:mt-0 opacity-0 -translate-x-full duration-1000 scroll-animation delay-200">
+            <div class="grid justify-center items-center xl:flex xl:justify-between mt-8 xl:mt-0 opacity-0 -translate-x-full duration-1000 scroll-animation  ">
                 <div>
                     <div class="flex justify-center items-center gap-4">
                         <div class="grid place-items-center w-[80px] h-[80px] border border-black shadow-md rounded-xl">
@@ -217,7 +224,7 @@
                     <p class="xl:text-lg text-gray-700 mt-2 xl:mt-4 max-w-[600px] text-center">Subheadline texto Subheadline texto Subheadline texto.</p> 
                 </div>
 
-                <img class="w-[255px] xl:w-[300px] mt-4 mx-auto xl:mx-0" src="/src/img/3dcards.png" alt="">
+                <img class="w-[255px] xl:w-[300px] mt-4 mx-auto xl:mx-0" src="src/img/3dcards.png" alt="">
             </div>
         </div>
     </div>
@@ -229,7 +236,7 @@
             <div id="slider-wrapper" class="flex w-[375px] xl:w-full justify-between items-center mx-auto relative" style="scrollbar-width: none; -ms-overflow-style: none;">
                 <button id="prev" class="ri-arrow-left-s-line text-3xl xl:hidden"></button>
                 
-                <div id="slider" class="flex overflow-x-auto snap-mandatory snap-x scroll-smooth gap-3 xl:gap-0 xl:w-[1200px] xl:justify-between px-3 xl:px-5 opacity-0 -translate-x-full duration-1000 scroll-animation delay-200" style="scrollbar-width: none; -ms-overflow-style: none;">
+                <div id="slider" class="flex overflow-x-auto snap-mandatory snap-x scroll-smooth gap-3 xl:gap-0 xl:w-[1200px] xl:justify-between px-3 xl:px-5 opacity-0 -translate-x-full duration-1000 scroll-animation pb-1" style="scrollbar-width: none; -ms-overflow-style: none;">
                     <div id="slider-1" class="bg-slate-200 w-[300px] xl:w-[375px] rounded-3xl mt-4 xl:mt-6 py-5 px-3 shadow-md flex-shrink-0 snap-center">
                         <figure class="mx-auto text-center">
                             <blockquote>
@@ -242,7 +249,7 @@
                                 <div class="flex items-center ">
                                     <cite class="font-medium text-gray-900 mr-3">Zelia Costa</cite>
                                     <div class="h-6 w-[2px] bg-[#222] rounded-xl"></div>
-                                    <img class="w-6 ml-3" src="/src/img/Google.png" alt="">
+                                    <img class="w-6 ml-3" src="src/img/Google.png" alt="">
                                 </div>
                             </figcaption>
 
@@ -269,7 +276,7 @@
                                 <div class="flex items-center ">
                                     <cite class="font-medium text-gray-900 mr-3">Zelia Costa</cite>
                                     <div class="h-6 w-[2px] bg-[#222] rounded-xl"></div>
-                                    <img class="w-6 ml-3" src="/src/img/Google.png" alt="">
+                                    <img class="w-6 ml-3" src="src/img/Google.png" alt="">
                                 </div>
                             </figcaption>
 
@@ -297,7 +304,7 @@
                                 <div class="flex items-center ">
                                     <cite class="font-medium text-gray-900 mr-3">Zelia Costa</cite>
                                     <div class="h-6 w-[2px] bg-[#222] rounded-xl"></div>
-                                    <img class="w-6 ml-3" src="/src/img/Google.png" alt="">
+                                    <img class="w-6 ml-3" src="src/img/Google.png" alt="">
                                 </div>
                             </figcaption>
 
@@ -318,11 +325,11 @@
         </div>
     </div>
 
-    <div class="w-full bg-custom-image py-10 xl:py-20 rounded-3xl grid place-items-center opacity-0 -translate-x-full duration-1000 scroll-animation delay-200">
+    <div class="w-full bg-custom-image py-10 xl:py-20 rounded-3xl grid place-items-center opacity-0 -translate-x-full duration-1000 scroll-animation  ">
         <div class="grid place-items-center xl:flex">
             <div class="px-5 xl:px-0">
                 <div class="border border-slate-400 bg-custom-image  w-full grid justify-center py-10 xl:py-16 px-5 xl:px-12 rounded-3xl bg-slate-100 shadow-md z-40">
-                    <img class="w-[300px]" src="/src/img/3dcards.png" alt="">
+                    <img class="w-[300px]" src="src/img/3dcards.png" alt="">
     
                     <div class="mt-4">
                         <h1 class="text-2xl font-semibold">Cartão Tecnológico</h1>
@@ -351,7 +358,7 @@
                     </button>
     
                     <div class="mt-8">
-                        <a href="https://www.xlinker.com.br/card" class="bg-[#883CEB] mx-auto md:mx-0 rounded-full gap-2 py-3 px-6 font-semibold shadow-md shadow-green-950 text-white flex items-center justify-center border-2 border-transparent hover:border-[#883CEB] hover:bg-transparent hover:text-[#883CEB] duration-300 cursor-pointer">PERSONALIZE SEU CARTÃO</a>
+                        <a href="https://www.xlinker.com.br/card" class="bg-[#883CEB] mx-auto md:mx-0 rounded-full gap-2 py-3 px-6 font-semibold shadow-md  shadow-violet-950 text-white flex items-center justify-center border-2 border-transparent hover:border-[#883CEB] hover:bg-transparent hover:text-[#883CEB] duration-300 cursor-pointer">PERSONALIZE SEU CARTÃO</a>
                     </div>
     
                     <div class="flex justify-center items-center gap-1 duration-1000 scroll-animation mt-4"><i class="ri-secure-payment-fill text-3xl text-[#883CEB]"></i>PAGAMENTO SEGURO</div>
@@ -368,9 +375,9 @@
         </div>
     </div>
 
-    <div class="grid place-items-center py-10 xl:py-20 opacity-0 -translate-x-full duration-1000 scroll-animation delay-200">
+    <div id="faq" class="grid place-items-center py-10 xl:py-20 opacity-0 -translate-x-full duration-1000 scroll-animation ">
         <h1 class="text-lg font-medium text-[#883CEB]">FAQ</h1>
-        <h1 class="text-xl font-medium">Perguntas Frequentes</h1>
+        <h1 class="text-2xl font-semibold">Perguntas Frequentes</h1>
 
         <div class="grid md:flex gap-5 px-5">
             <div class="max-w-[570px]">
@@ -456,14 +463,14 @@
     </div>
 
     <div class="mx-auto max-w-[1200px]">
-        <div class="grid justify-center items-center xl:flex mx-5 xl:gap-8 border-2 border-dotted border-green-500 bg-[#36d67917] rounded-3xl py-5 xl:py-10 px-9">
+        <div class="grid justify-center items-center xl:flex mx-5 xl:gap-8 border-2 border-dotted border-green-500 bg-[#36d67917] rounded-3xl px-8 py-5 xl:py-10">
             <div class="grid">
                 <h1 class="text-3xl font-semibold text-center">Ainda ficou com alguma dúvida?</h1>
                 <p class="text-lg text-center mt-2">Entre em contato com nossa equipe via WhatsApp.</p>
             </div>
     
             <div class="mt-6 xl:mt-0 grid justify-center">
-                <a class="bg-[#22C55E] rounded-3xl h-[52px] xl:h-[58px] xl:w-[405px] text-sm xl:text-lg font-semibold shadow-md shadow-green-800 text-white flex items-center justify-between pl-1 pr-1 xl:pr-16 border-2 border-transparent hover:border-[#22C55E] hover:bg-transparent hover:text-[#22C55E] duration-300" href="">
+                <a class="bg-[#22C55E] rounded-3xl h-[52px] xl:h-[58px] xl:w-[405px] text-sm xl:text-lg font-semibold shadow-md shadow-green-950 text-white flex items-center justify-between pl-1 pr-1 xl:pr-16 border-2 border-transparent hover:border-[#22C55E] hover:bg-transparent hover:text-[#22C55E] duration-300" href="">
                     <i class="ri-whatsapp-line text-[#22C55E] bg-white w-11 h-11 grid place-items-center rounded-3xl text-2xl font-normal mr-1"></i>
     
                     FALAR COM UM CONSULTOR
@@ -476,12 +483,12 @@
         <div class="px-5 grid mx-auto text-white xl:w-[1200px]">
             <div class="grid justify-center xl:flex xl:justify-between">
                 <div class="grid place-items-center max-w-[500px]">
-                    <img class="w-[180px] pb-10" src="/src/img/purple-icon-white-text.png" alt="">
+                    <img class="w-[180px] pb-5" src="src/img/purple-icon-white-text.png" alt="">
                     <p style="-webkit-hyphens: auto; -ms-hyphens: auto; hyphens: auto;" class="text-justify text-gray-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis totam modi, necessitatibus voluptate consequuntur dolorem aliquid repudiandae soluta aperiam esse possimus nostrum expedita rem autem! Inventore unde ipsum at!</p>
                 </div>
                 
                 <div class="grid xl:flex justify-center xl:gap-32">
-                    <div class="mt-8">
+                    <div class="mt-8 xl:mt-0">
                         <div class="grid">
                             <h1 class="text-2xl font-medium">Geral</h1>
     
@@ -510,7 +517,7 @@
                         </div>
                     </div>
     
-                    <div class="mt-8">
+                    <div class="mt-8 xl:mt-0">
                         <div class="grid">
                             <h1 class="text-2xl font-medium">Contato</h1>
         
@@ -533,10 +540,10 @@
                 
             </div>
             
-            <div class="divide-y divide-gray-700 mt-4">
+            <div class="divide-y divide-gray-700 mt-4 xl:mt-8">
                 <div></div>
                 <div class="grid place-items-center gap-2">
-                    <div class="mt-4"><i class="ri-map-pin-2-fill"></i> São Paulo, Brasil</div>
+                    <div class="mt-4 xl:mt-8"><i class="ri-map-pin-2-fill"></i> São Paulo, Brasil</div>
                     <div class="text-center">xlinker. Todos os direitos reservados 2024.</div>
                 </div>
             </div>
