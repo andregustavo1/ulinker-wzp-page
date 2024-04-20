@@ -44,7 +44,6 @@ btnWhite.addEventListener('click', function() {
     if (this.classList.contains('selected')) {
         pRotate.textContent = 'Olhar frente';
         document.querySelector('.cTa').setAttribute('href', 'https://seguro.xlinker.com.br/r/FMY9BCCH96');
-
     }
 
     if (cardWhiteFront.classList.contains('hidden')) {
@@ -186,8 +185,10 @@ const quantityElement = document.querySelector('#quantity');
 
 addButton.addEventListener('click', function() {
   let quantity = parseInt(quantityElement.textContent, 10);
-  quantity += 1;
-  quantityElement.textContent = quantity;
+  if (quantity < 10) {
+    quantity += 1;
+    quantityElement.textContent = quantity;
+  }
 });
 
 subButton.addEventListener('click', function() {
