@@ -21,7 +21,7 @@
                 <div class="flex gap-4">
                     <div class="grid place-items-center">
                         <a href="">
-                            <img class="h-8 hidden md:block" src="src/img/purple-icon-black-text.png" alt="">
+                            <img class="h-8 hidden md:block" src="src/img/purple-icon-black-text.png" alt=""> 
                             <img class="md:hidden h-8" src="src/img/purple-icon-no-text.png" alt="">
                         </a>
                     </div>
@@ -67,7 +67,7 @@
             <li class="border-b-[1px] border-slate-300 pb-5"><a href="#faq" class="text-gray-700">Texto</a></li>
             <li class="border-b-[1px] border-slate-300 pb-5"><a href="#faq" class="text-gray-700">Texto</a></li>
             <li class="border-b-[1px] border-slate-300 pb-5"><a href="#faq" class="text-gray-700">Texto</a></li>
-            <li class="border-b-[1px] border-slate-300 pb-5"><a href="#faq" class="text-gray-700">Perguntas Frequêntes</a></li>
+            <li class="border-b-[1px] border-slate-300 pb-5"><button class="btnFaq text-gray-700">Perguntas Frequêntes</button></li>
 
             <div>
                 <a class="bg-green-600 rounded-full py-2 px-6 font-semibold shadow-sm  shadow-green-950 text-white flex items-center justify-center border-2 border-transparent hover:border-green-600 hover:bg-transparent hover:text-green-600 duration-300" href="card/index.html"><i class="text-2xl font-normal mr-2 ri-whatsapp-line"></i>FALE CONOSCO</a>
@@ -79,24 +79,23 @@
         <div class="grid place-items-center">
             <div class="grid justify-center xl:w-[1200px] px-5 md:justify-between md:flex md:flex-row-reverse">
                 <div class="grid place-items-center px-5 mx-auto">
-                    <img class="w-[250px] xl:w-[380px]" src="src/img/hero-img.png" alt="">
+                    <img class="w-[250px] md:min-w-[280px] md:max-w-[280px] xl:min-w-[350px] xl:max-w-[350px]" src="src/img/hero-img.png" alt="">
                 </div>
     
                 <div class="">
-                    <div class="mt-8 xl:mt-16 grid place-items-center">
+                    <div class="mt-8 xl:mt-16 grid ">
                         <h1 class="text-2xl xl:text-4xl font-bold max-w-[500px] xl:max-w-[600px]">A ferramenta que alavanca suas vendas com um toque.</h1>
                         <p class="text-lg xl:text-xl text-gray-700 mt-2 xl:mt-4 max-w-[500px] xl:max-w-[600px]">Traga <span class="font-bold">posicionamento de marca</span> com a <span class="font-bold">tecnologia</span> e acelere suas <span class="font-bold">vendas</span> agora!</p>
                     </div> 
     
-                    <div class="md:flex items-center mt-4 md:mt-8 md:gap-4 md:max-w-[500px] xl:max-w-[600px]">
-                        <a href="https://www.xlinker.com.br/card" class="bg-[#883CEB] mx-auto md:mx-0 md:min-w-[270px] xl:min-w-[335px] rounded-full max-w-[520px] gap-2 py-3 px-6 font-semibold shadow-md shadow-violet-950 text-white flex items-center justify-center border-2 border-transparent hover:border-[#883ceb] hover:bg-transparent hover:text-[#883CEB] duration-300 cursor-pointer text-center">COMPRAR AGORA</a>
+                    <div class="xl:flex items-center md mt-4 md:mt-8 md:gap-2 md:max-w-[500px] xl:max-w-[650px]">
+                        <a href="https://www.xlinker.com.br/card" class="bg-[#883CEB] mx-auto md:mx-0 md:min-w-[270px] xl:min-w-[300px] rounded-full max-w-[520px] gap-2 py-3 px-6 font-semibold shadow-md shadow-violet-950 text-white flex items-center justify-center border-2 border-transparent hover:border-[#883ceb] hover:bg-transparent hover:text-[#883CEB] duration-300 cursor-pointer text-center">COMPRAR AGORA</a>
     
-                        <div class="flex items-center sm:gap-2 mt-4 md:mt-0 md:grid place-items-center">
+                        <div class="flex items-center sm:gap-2 md:max-w-[450px] mx-auto mt-4 xl:mt-0">
                             <img class="w-[150px] h-[43px]" src="/src/img/logos.png" alt="">
 
                             <p class="text-gray-700 text-sm text-center xl:max-w-[320px]"><span class="font-bold">+5.000</span> empresas confiam na xLinker. Junte-se a eles.</p> 
                         </div>
-
                     </div> 
                 </div>
             </div>   
@@ -175,6 +174,8 @@
                             </div>
                         </div>
                     </div>
+
+                    <p class="grid place-items-center mt-4 text-lg">E muito mais!</p>
                 </div>
                 
  
@@ -193,11 +194,16 @@
 
         <div class="mt-8 xl:mt-16 xl:w-[1200px] overflow-x-hidden px-5 mx-auto">
             <div class="grid justify-center items-center md:flex md:justify-between opacity-0 -translate-x-full duration-1000 scroll-animation">
-                <div class="max-w-[600px] grid place-items-center">
-                    <div class="grid place-items-center md:flex justify-center items-center gap-4 max-w-[500px]">
-                        <div class="grid place-items-center min-w-[80px] h-[80px] border border-black shadow-md rounded-xl">
-                            <p class="text-2xl font-medium text-[#883CEB]">#1</p>
+                <div class="max-w-[500px] grid place-items-center">
+                    <div class="grid place-items-center gap-4">
+                        <div class="flex items-center gap-4">
+                            <div class="grid place-items-center min-w-[80px] h-[80px] border border-black shadow-md rounded-xl">
+                                <p class="text-2xl font-medium text-[#883CEB]">#1</p>
+                            </div>
+
+                            <h1 class="text-xl xl:text-2xl">Primeiro Passo</h1>
                         </div>
+                      
     
                         <h1 class="text-xl xl:text-3xl font-semibold text-center"><span class="text-[#883CEB] font-bold">Personalize</span> o cartão para combinar com você</h1>
                     </div>
@@ -209,10 +215,14 @@
             </div>
 
             <div class="grid justify-center items-center md:flex md:justify-between md:flex-row-reverse mt-8 md:mt-0 overflow-x-hidden opacity-0 translate-x-full duration-1000 scroll-animation  ">
-                <div class="max-w-[600px] grid place-items-center">
-                    <div class="grid place-items-center md:flex justify-center items-center gap-4">
-                        <div class="grid place-items-center w-[80px] h-[80px] border border-black shadow-md rounded-xl">
-                            <p class="text-2xl font-medium text-[#883CEB]">#2</p>
+                <div class="max-w-[500px] grid place-items-center">
+                    <div class="grid place-items-center gap-4">
+                        <div class="flex items-center gap-4">
+                            <div class="grid place-items-center min-w-[80px] h-[80px] border border-black shadow-md rounded-xl">
+                                <p class="text-2xl font-medium text-[#883CEB]">#2</p>
+                            </div>
+
+                            <h1 class="text-xl xl:text-2xl">Segundo Passo</h1>
                         </div>
                         
                         <h1 class="text-xl xl:text-3xl font-semibold text-center">Insira suas <span class="text-[#883CEB] font-bold">informações</span></h1>
@@ -225,10 +235,14 @@
             </div>
 
             <div class="grid justify-center items-center md:flex md:justify-between mt-8 md:mt-0 opacity-0 -translate-x-full duration-1000 scroll-animation ">
-                <div class="max-w-[600px] grid place-items-center">
-                    <div class="grid place-items-center md:flex justify-center items-center gap-4 max-w-[550px]">
-                        <div class="grid place-items-center min-w-[80px] h-[80px] border border-black shadow-md rounded-xl">
-                            <p class="text-2xl font-medium text-[#883CEB]">#3</p>
+                <div class="max-w-[500px] grid place-items-center">
+                    <div class="grid place-items-center gap-4">
+                        <div class="flex items-center gap-4">
+                            <div class="grid place-items-center min-w-[80px] h-[80px] border border-black shadow-md rounded-xl">
+                                <p class="text-2xl font-medium text-[#883CEB]">#3</p>
+                            </div>
+
+                            <h1 class="text-xl xl:text-2xl">Terceiro Passo</h1>
                         </div>
     
                         <h1 class="text-xl xl:text-3xl font-semibold text-center">Compartilhe em qualquer lugar e <span class="text-[#883CEB] font-bold">alavanque</span> a clientela</h1>
@@ -257,10 +271,10 @@
                             </blockquote>
             
                             <figcaption class="flex items-center justify-center mt-3 space-x-3 rtl:space-x-reverse">
-                                <img class="w-8 h-8 rounded-full" src="https://lh3.googleusercontent.com/a-/ALV-UjUK5wJ7E5SCU3-DSZ1t-sPrVPN4qQ-ZHI8C9gcxxoVh7Uxa=w60-h60-p-rp-mo-br100" alt="profile picture">
+                                <img class="w-8 h-8 rounded-full" src="/src/img/review-1.png" alt="profile picture">
             
                                 <div class="flex items-center ">
-                                    <cite class="font-medium text-gray-900 mr-3">Zelia Costa</cite>
+                                    <cite class="font-medium text-gray-900 mr-3">Raquel Souza</cite>
                                     <div class="h-6 w-[2px] bg-[#222] rounded-xl"></div>
                                     <img class="w-6 ml-3" src="src/img/Google.png" alt="">
                                 </div>
@@ -284,10 +298,10 @@
                             </blockquote>
             
                             <figcaption class="flex items-center justify-center mt-3 space-x-3 rtl:space-x-reverse">
-                                <img class="w-8 h-8 rounded-full" src="https://lh3.googleusercontent.com/a-/ALV-UjUK5wJ7E5SCU3-DSZ1t-sPrVPN4qQ-ZHI8C9gcxxoVh7Uxa=w60-h60-p-rp-mo-br100" alt="profile picture">
+                                <img class="w-8 h-8 rounded-full" src="/src/img/review-2.png" alt="profile picture">
             
                                 <div class="flex items-center ">
-                                    <cite class="font-medium text-gray-900 mr-3">Zelia Costa</cite>
+                                    <cite class="font-medium text-gray-900 mr-3">Miguel Spasov</cite>
                                     <div class="h-6 w-[2px] bg-[#222] rounded-xl"></div>
                                     <img class="w-6 ml-3" src="src/img/Google.png" alt="">
                                 </div>
@@ -312,10 +326,10 @@
             
             
                             <figcaption class="flex items-center justify-center mt-3 space-x-3 rtl:space-x-reverse">
-                                <img class="w-8 h-8 rounded-full" src="https://lh3.googleusercontent.com/a-/ALV-UjUK5wJ7E5SCU3-DSZ1t-sPrVPN4qQ-ZHI8C9gcxxoVh7Uxa=w60-h60-p-rp-mo-br100" alt="profile picture">
+                                <img class="w-8 h-8 rounded-full" src="/src/img/review-3.png" alt="profile picture">
             
                                 <div class="flex items-center ">
-                                    <cite class="font-medium text-gray-900 mr-3">Zelia Costa</cite>
+                                    <cite class="font-medium text-gray-900 mr-3">Douglas de Matteu</cite>
                                     <div class="h-6 w-[2px] bg-[#222] rounded-xl"></div>
                                     <img class="w-6 ml-3" src="src/img/Google.png" alt="">
                                 </div>
@@ -391,7 +405,7 @@
     <div id="faq" class="grid place-items-center py-10 xl:py-20 px-5 opacity-0 -translate-x-full duration-1000 scroll-animation">
         <h1 class="text-lg font-medium text-[#883CEB]">FAQ</h1>
 
-        <div class="place-items-center py-2 border-[1px] border-slate-300 rounded-t-2xl grid max-w-[570px] md:max-w-[1160px] w-full"><h1 class="text-2xl font-semibold">Perguntas Frequentes</h1></div>
+        <div class="place-items-center py-2 border-[1px] border-slate-300 rounded-t-2xl grid max-w-[570px] md:max-w-[1160px] w-full"><h1 class="text-2xl font-medium">Perguntas Frequentes</h1></div>
         
         <div class="grid md:flex md:gap-8">
             <div class="max-w-[570px] flex-1">

@@ -15,22 +15,35 @@ menuButton.addEventListener("click", function () {
     icon.classList.toggle("ri-close-large-line");
 });
 
-document.addEventListener('click', function(event) {
+function closeMenu() {
+    menu.classList.remove("max-h-[442px]", "open");
+    menu.classList.add("max-h-0");
+    menu.classList.remove("bg-white");
+    menu.classList.remove("shadow-md");
+    headerContainer.classList.add("shadow-md");
+    icon.classList.remove("ri-close-large-line");
+    icon.classList.add("ri-menu-line");
+}
 
+document.addEventListener('click', function(event) {
     if (!menu.contains(event.target) && !header.contains(event.target) && menu.classList.contains("open")) {
-        menu.classList.remove("max-h-[442px]", "open");
-        menu.classList.add("max-h-0");
-        menu.classList.remove("bg-white");
-        menu.classList.remove("shadow-md");
-        headerContainer.classList.add("shadow-md");
-        icon.classList.remove("ri-close-large-line");
-        icon.classList.add("ri-menu-line");
+        closeMenu();
     }
 });
 
-document.querySelector('.btnFaq').addEventListener('click', function() {
-  document.getElementById('faq').scrollIntoView({
-      behavior: 'smooth'
+window.addEventListener('scroll', function() {
+  if (menu.classList.contains("open")) {
+      closeMenu();
+  }
+});
+
+// Code for scroll to element
+document.querySelectorAll('.btnFaq').forEach(function(btnFaq) {
+  btnFaq.addEventListener('click', function() {
+      const faq = document.getElementById('faq');
+      const faqPosition = faq.getBoundingClientRect().top + window.pageYOffset;
+      const scrollToPosition = faqPosition - faq.offsetHeight * 0.1;
+      window.scrollTo({ top: scrollToPosition, behavior: 'smooth' });
   });
 });
 
@@ -149,7 +162,7 @@ const faqAnswer1 = document.getElementById("faqAnswer1");
 
 faq1.addEventListener("click", function () {
   faqAnswer1.classList.toggle("max-h-0");
-  faqAnswer1.classList.toggle("max-h-[96px]");
+  faqAnswer1.classList.toggle("max-h-[48px]");
   faq1.classList.toggle("rotate-[-45deg]");
   faq1.classList.toggle("bg-[#8234E9]");
   faq1.classList.toggle("text-white");
@@ -160,7 +173,8 @@ const faqAnswer2 = document.getElementById("faqAnswer2");
 
 faq2.addEventListener("click", function () {
   faqAnswer2.classList.toggle("max-h-0");
-  faqAnswer2.classList.toggle("max-h-[96px]");
+  faqAnswer2.classList.toggle("max-h-[144px]");
+  faqAnswer2.classList.toggle("xl:max-h-[96px]");
   faq2.classList.toggle("rotate-[-45deg]");
   faq2.classList.toggle("bg-[#8234E9]");
   faq2.classList.toggle("text-white");
@@ -171,7 +185,8 @@ const faqAnswer3 = document.getElementById("faqAnswer3");
 
 faq3.addEventListener("click", function () {
   faqAnswer3.classList.toggle("max-h-0");
-  faqAnswer3.classList.toggle("max-h-[96px]");
+  faqAnswer3.classList.toggle("max-h-[144px]");
+  faqAnswer3.classList.toggle("xl:max-h-[96px]");
   faq3.classList.toggle("rotate-[-45deg]");
   faq3.classList.toggle("bg-[#8234E9]");
   faq3.classList.toggle("text-white");
@@ -182,7 +197,8 @@ const faqAnswer4 = document.getElementById("faqAnswer4");
 
 faq4.addEventListener("click", function () {
   faqAnswer4.classList.toggle("max-h-0");
-  faqAnswer4.classList.toggle("max-h-[96px]");
+  faqAnswer4.classList.toggle("max-h-[144px]");
+  faqAnswer4.classList.toggle("xl:max-h-[96px]");
   faq4.classList.toggle("rotate-[-45deg]");
   faq4.classList.toggle("bg-[#8234E9]");
   faq4.classList.toggle("text-white");
@@ -193,7 +209,8 @@ const faqAnswer5 = document.getElementById("faqAnswer5");
 
 faq5.addEventListener("click", function () {
   faqAnswer5.classList.toggle("max-h-0");
-  faqAnswer5.classList.toggle("max-h-[96px]");
+  faqAnswer5.classList.toggle("max-h-[144px]");
+  faqAnswer5.classList.toggle("xl:max-h-[96px]");
   faq5.classList.toggle("rotate-[-45deg]");
   faq5.classList.toggle("bg-[#8234E9]");
   faq5.classList.toggle("text-white");
@@ -204,7 +221,8 @@ const faqAnswer6 = document.getElementById("faqAnswer6");
 
 faq6.addEventListener("click", function () {
   faqAnswer6.classList.toggle("max-h-0");
-  faqAnswer6.classList.toggle("max-h-[96px]");
+  faqAnswer6.classList.toggle("max-h-[144px]");
+  faqAnswer6.classList.toggle("xl:max-h-[96px]");
   faq6.classList.toggle("rotate-[-45deg]");
   faq6.classList.toggle("bg-[#8234E9]");
   faq6.classList.toggle("text-white");
@@ -215,7 +233,8 @@ const faqAnswer7 = document.getElementById("faqAnswer7");
 
 faq7.addEventListener("click", function () {
   faqAnswer7.classList.toggle("max-h-0");
-  faqAnswer7.classList.toggle("max-h-[96px]");
+  faqAnswer7.classList.toggle("max-h-[144px]");
+  faqAnswer7.classList.toggle("xl:max-h-[96px]");
   faq7.classList.toggle("rotate-[-45deg]");
   faq7.classList.toggle("bg-[#8234E9]");
   faq7.classList.toggle("text-white");
@@ -226,7 +245,8 @@ const faqAnswer8 = document.getElementById("faqAnswer8");
 
 faq8.addEventListener("click", function () {
   faqAnswer8.classList.toggle("max-h-0");
-  faqAnswer8.classList.toggle("max-h-[96px]");
+  faqAnswer8.classList.toggle("max-h-[144px]");
+  faqAnswer8.classList.toggle("xl:max-h-[96px]");
   faq8.classList.toggle("rotate-[-45deg]");
   faq8.classList.toggle("bg-[#8234E9]");
   faq8.classList.toggle("text-white");
