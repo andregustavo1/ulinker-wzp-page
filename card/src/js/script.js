@@ -1,11 +1,11 @@
-const btnBlack = document.querySelector('#btnBlack');
-const btnWhite = document.querySelector('#btnWhite');
+const btnBlack = document.getElementById('btnBlack');
+const btnWhite = document.getElementById('btnWhite');
 
-const cardBlackFront= document.querySelector('#cardBlackFront');
-const cardWhiteFront = document.querySelector('#cardWhiteFront');
+const cardBlackFront= document.getElementById('cardBlackFront');
+const cardWhiteFront = document.getElementById('cardWhiteFront');
 
-const cardBlackBack = document.querySelector('#cardBlackBack');
-const cardWhiteBack = document.querySelector('#cardWhiteBack');
+const cardBlackBack = document.getElementById('cardBlackBack');
+const cardWhiteBack = document.getElementById('cardWhiteBack');
 
 const cTaLinks = document.querySelectorAll('.cTa');
 
@@ -21,10 +21,6 @@ btnBlack.addEventListener('click', function() {
     } else {
         cardBlackFront.classList.remove('hidden');
     };
-
-    cTaLinks.forEach(link => {
-        link.setAttribute('href', 'https://seguro.xlinker.com.br/r/OQAF5RPYUS');
-    });
 });
 
 btnWhite.addEventListener('click', function() {
@@ -39,13 +35,9 @@ btnWhite.addEventListener('click', function() {
     } else {
         cardWhiteFront.classList.remove('hidden');
     };
-
-    cTaLinks.forEach(link => {
-        link.setAttribute('href', 'https://seguro.xlinker.com.br/r/FMY9BCCH96');
-    });
 });
 
-const btnRotate = document.querySelector('#rotate');
+const btnRotate = document.getElementById('rotate');
 const pRotate = btnRotate.querySelector('p');
 
 btnRotate.addEventListener('click', function() {
@@ -78,14 +70,14 @@ btnRotate.addEventListener('click', function() {
     };
 });
 
-const fileUpload = document.querySelector('#file-upload');
-const logoBlack = document.querySelector('#logo-black');
+const fileUpload = document.getElementById('file-upload');
+const logoBlack = document.getElementById('logo-black');
 const h1Black = logoBlack.querySelector('h1');
-const logoImgBlack = document.querySelector('#logo-img-black');
+const logoImgBlack = document.getElementById('logo-img-black');
 
-const logoWhite = document.querySelector('#logo-white');
+const logoWhite = document.getElementById('logo-white');
 const h1White = logoWhite.querySelector('h1');
-const logoImgWhite = document.querySelector('#logo-img-white');
+const logoImgWhite = document.getElementById('logo-img-white');
 
 fileUpload.addEventListener('change', function() {
     const file = this.files[0];
@@ -106,9 +98,9 @@ fileUpload.addEventListener('change', function() {
     }
 });
 
-const inputName = document.querySelector('#inputName');
-const nameBlackCard = document.querySelector('#nameBlackCard');
-const nameWhiteCard = document.querySelector('#nameWhiteCard');
+const inputName = document.getElementById('inputName');
+const nameBlackCard = document.getElementById('nameBlackCard');
+const nameWhiteCard = document.getElementById('nameWhiteCard');
 
 inputName.addEventListener('input', function() {
     nameBlackCard.textContent = this.value;
@@ -126,8 +118,8 @@ document.getElementById('btnReview').addEventListener('click', function() {
     });
 });
 
-const ctaBtn = document.querySelector('#ctaBtn');
-const floatingButton = document.querySelector('#floatingButton');
+const ctaBtn = document.getElementById('ctaBtn');
+const floatingButton = document.getElementById('floatingButton');
 
 const observer = new IntersectionObserver(function(entries) {
     if (entries[0].isIntersecting) {
@@ -168,12 +160,12 @@ const observerNav = new IntersectionObserver(function(entries) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             const id = entry.target.id;
-            const nav = document.querySelector(`#slider-nav-${id.split('-')[1]}`);
+            const nav = document.getElementById(`slider-nav-${id.split('-')[1]}`);
             nav.classList.add('bg-blue-500'); 
             nav.classList.remove('bg-slate-200');
         } else {
             const id = entry.target.id;
-            const nav = document.querySelector(`#slider-nav-${id.split('-')[1]}`);
+            const nav = document.getElementById(`slider-nav-${id.split('-')[1]}`);
             nav.classList.remove('bg-blue-500');
             nav.classList.add('bg-slate-200');
         }
@@ -184,9 +176,9 @@ sliders.forEach(slider => {
     observerNav.observe(slider);
 });
 
-const addButton = document.querySelector('#add');
-const subButton = document.querySelector('#sub');
-const quantityElement = document.querySelector('#quantity');
+const addButton = document.getElementById('add');
+const subButton = document.getElementById('sub');
+const quantityElement = document.getElementById('quantity');
 
 addButton.addEventListener('click', function() {
   let quantity = parseInt(quantityElement.textContent, 10);

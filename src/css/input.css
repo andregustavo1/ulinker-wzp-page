@@ -9,13 +9,3 @@
 .box-shadow {
     box-shadow: 0 0 0 3px #ffffff, 0 0 0 5px #000000;
 }
-
-.rotate-y-180 {
-    transform: rotateY(180deg);
-    transition: transform 0.5s ease; /* ajuste a duração da transição conforme desejado */
-}
-
-.rotate-y-0 {
-    transform: rotateY(0deg);
-    transition: transform 0.5s ease; /* ajuste a duração da transição conforme desejado */
-}

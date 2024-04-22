@@ -636,6 +636,10 @@ video {
   right: 1.5rem;
 }
 
+.top-0{
+  top: 0px;
+}
+
 .top-10{
   top: 2.5rem;
 }
@@ -646,10 +650,6 @@ video {
 
 .top-\[55px\]{
   top: 55px;
-}
-
-.top-0{
-  top: 0px;
 }
 
 .z-10{
@@ -2014,18 +2014,6 @@ video {
 
 .box-shadow {
   box-shadow: 0 0 0 3px #ffffff, 0 0 0 5px #000000;
-}
-
-.rotate-y-180 {
-  transform: rotateY(180deg);
-  transition: transform 0.5s ease;
-  /* ajuste a duração da transição conforme desejado */
-}
-
-.rotate-y-0 {
-  transform: rotateY(0deg);
-  transition: transform 0.5s ease;
-  /* ajuste a duração da transição conforme desejado */
 }
 
 .hover\:-translate-y-1:hover{
