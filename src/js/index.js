@@ -197,8 +197,8 @@ const faqAnswer4 = document.getElementById("faqAnswer4");
 
 faq4.addEventListener("click", function () {
   faqAnswer4.classList.toggle("max-h-0");
-  faqAnswer4.classList.toggle("max-h-[144px]");
-  faqAnswer4.classList.toggle("xl:max-h-[96px]");
+  faqAnswer4.classList.toggle("max-h-[168 px]");
+  faqAnswer4.classList.toggle("xl:max-h-[120px]");
   faq4.classList.toggle("rotate-[-45deg]");
   faq4.classList.toggle("bg-[#8234E9]");
   faq4.classList.toggle("text-white");

@@ -16,61 +16,66 @@ btnBlack.addEventListener('click', function() {
     cardWhiteBack.classList.add('hidden');
     cardWhiteFront.classList.add('hidden');
 
+    if (btnBlack.classList.contains('back')) {
+        cardBlackBack.classList.remove('hidden');
+    } else {
+        cardBlackFront.classList.remove('hidden');
+    };
+
     cTaLinks.forEach(link => {
         link.setAttribute('href', 'https://seguro.xlinker.com.br/r/OQAF5RPYUS');
     });
-
-    if (this.classList.contains('selected')) {
-        pRotate.textContent = 'Olhar frente';
-        document.querySelector('.cTa').setAttribute('href', 'https://seguro.xlinker.com.br/r/OQAF5RPYUS');
-    }
-
-    if (cardBlackFront.classList.contains('hidden')) {
-        cardBlackBack.classList.remove('hidden');
-    }
 });
 
 btnWhite.addEventListener('click', function() {
     btnWhite.classList.add('selected', 'box-shadow');
     btnBlack.classList.remove('selected', 'box-shadow');
 
-    cTaLinks.forEach(link => {
-        link.setAttribute('href', 'https://seguro.xlinker.com.br/r/FMY9BCCH96');
-    });
-
     cardBlackBack.classList.add('hidden');
     cardBlackFront.classList.add('hidden');
 
-    if (this.classList.contains('selected')) {
-        pRotate.textContent = 'Olhar frente';
-        document.querySelector('.cTa').setAttribute('href', 'https://seguro.xlinker.com.br/r/FMY9BCCH96');
-    }
-
-    if (cardWhiteFront.classList.contains('hidden')) {
+    if (btnWhite.classList.contains('back')) {
         cardWhiteBack.classList.remove('hidden');
-    }
+    } else {
+        cardWhiteFront.classList.remove('hidden');
+    };
+
+    cTaLinks.forEach(link => {
+        link.setAttribute('href', 'https://seguro.xlinker.com.br/r/FMY9BCCH96');
+    });
 });
 
 const btnRotate = document.querySelector('#rotate');
 const pRotate = btnRotate.querySelector('p');
 
 btnRotate.addEventListener('click', function() {
-    
     if (btnBlack.classList.contains('selected')) {
         cardBlackFront.classList.toggle('hidden');
         cardBlackBack.classList.toggle('hidden');
-    }
+    };
 
     if (btnWhite.classList.contains('selected')) {
         cardWhiteFront.classList.toggle('hidden');
         cardWhiteBack.classList.toggle('hidden');
-    }
+    };
 
     if (pRotate.textContent === 'Olhar trás') {
         pRotate.textContent = 'Olhar frente';
     } else {
         pRotate.textContent = 'Olhar trás';
-    }
+    };
+
+    if (pRotate.textContent === 'Olhar frente') {
+        btnBlack.classList.add('back');
+        btnWhite.classList.add('back');
+        btnBlack.classList.remove('front');
+        btnWhite.classList.remove('front');
+    } else {
+        btnBlack.classList.remove('back');
+        btnWhite.classList.remove('back');
+        btnBlack.classList.add('front');
+        btnWhite.classList.add('front');
+    };
 });
 
 const fileUpload = document.querySelector('#file-upload');

@@ -107,8 +107,8 @@
                     </div>
         
                     <div class="flex gap-4 mt-2 xl:mt-4 items-center">
-                        <button id="btnBlack" class="w-[30px] h-[30px] rounded-full py-1 duration-200 selected box-shadow bg-neutral-900"></button>
-                        <button id="btnWhite" class="w-[30px] h-[30px] border-2 border-neutral-200 rounded-full py-1 duration-200 bg-white"></button>
+                        <button id="btnBlack" class="w-[30px] h-[30px] rounded-full py-1 duration-200 box-shadow bg-neutral-900 back selected"></button>
+                        <button id="btnWhite" class="w-[30px] h-[30px] border-2 border-neutral-200 rounded-full py-1 duration-200 bg-white back"></button>
                     </div>
         
                     <div class="grid place-items-center mt-5">
@@ -120,9 +120,24 @@
                         <input id="file-upload" type="file" style="display:none;">
                     </div>
         
-                    <div>
+                    <div class="relative">
+                        <div id="card-space" class="mt-2 opacity-0">
+                            <div class="w-[335px] h-[208px]"></div>
+                        </div>
+
                         <div>
-                            <div id="cardBlackBack" class="mt-2 transform rotate-x-90">
+                            <div id="cardBlackFront" class="mt-2 hidden absolute top-0">
+                                <div style="box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2), 0 4px 4px 0 rgba(0, 0, 0, 0.19);" class="w-[335px] h-[208px] bg-[#111] rounded-2xl px-2 grid place-items-center relative">
+                                    <img class="absolute w-[16px] top-8 right-6" src="../card/src/img/nfc-white.png" alt="">
+                
+                                    <div id="logo-black" class="flex items-center justify-center">
+                                        <h1 class="text-xl text-white">SEU LOGO AQUI</h1>
+                                        <img class="max-w-[225px] max-h-[100px]" id="logo-img-black" src="" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="cardBlackBack" class="mt-2 absolute top-0">
                                 <div style="box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2), 0 4px 4px 0 rgba(0, 0, 0, 0.19);" class="w-[335px] h-[208px] bg-[#111] rounded-2xl px-2 grid place-items-center relative">
                                     <img class="absolute w-[36px] top-8 right-6" src="../card/src/img/purple-icon-no-text.png" alt="">
                     
@@ -134,21 +149,21 @@
                                     </div>
                                 </div>
                             </div>
-        
-                            <div id="cardBlackFront" class="mt-2 hidden">
-                                <div style="box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2), 0 4px 4px 0 rgba(0, 0, 0, 0.19);" class="w-[335px] h-[208px] bg-[#111] rounded-2xl px-2 grid place-items-center relative">
-                                    <img class="absolute w-[16px] top-8 right-6" src="../card/src/img/nfc-white.png" alt="">
-                
-                                    <div id="logo-black" class="flex items-center justify-center">
-                                        <h1 class="text-xl text-white">SEU LOGO AQUI</h1>
-                                        <img class="max-w-[225px] max-h-[100px]" id="logo-img-black" src="" alt="">
-                                    </div>
-                                </div>
-                            </div>
                         </div>
         
                         <div>
-                            <div id="cardWhiteBack" class="mt-2 hidden">
+                            <div id="cardWhiteFront" class="mt-2 hidden absolute top-0">
+                                <div style="box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2), 0 4px 4px 0 rgba(0, 0, 0, 0.19);" class="w-[335px] h-[208px] bg-[#fafafa] rounded-2xl px-2 grid place-items-center relative">
+                                    <img class="absolute w-[16px] top-8 right-6" src="../card/src/img/nfc-black.png" alt="">
+                
+                                    <div id="logo-white" class="flex items-center justify-center">
+                                        <h1 class="text-xl">SEU LOGO AQUI</h1>
+                                        <img class="max-w-[225px] max-h-[100px]" id="logo-img-white" src="" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="cardWhiteBack" class="mt-2 hidden absolute top-0">
                                 <div style="box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2), 0 4px 4px 0 rgba(0, 0, 0, 0.19);" class="w-[335px] h-[208px] bg-[#fafafa] rounded-2xl px-2 grid place-items-center relative">
                                     <img class="absolute w-[36px] top-8 right-6" src="../card/src/img/purple-icon-no-text.png" alt="">
                     
@@ -160,21 +175,10 @@
                                     </div>
                                 </div>
                             </div>
-        
-                            <div id="cardWhiteFront" class="mt-2 hidden">
-                                <div style="box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2), 0 4px 4px 0 rgba(0, 0, 0, 0.19);" class="w-[335px] h-[208px] bg-[#fafafa] rounded-2xl px-2 grid place-items-center relative">
-                                    <img class="absolute w-[16px] top-8 right-6" src="../card/src/img/nfc-black.png" alt="">
-                
-                                    <div id="logo-white" class="flex items-center justify-center">
-                                        <h1 class="text-xl">SEU LOGO AQUI</h1>
-                                        <img class="max-w-[225px] max-h-[100px]" id="logo-img-white" src="" alt="">
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
         
-                    <button id="rotate" class="mt-1 hover:bg-slate-200 w-[335px]  justify-center items-center rounded-md duration-200 flex">
+                    <button id="rotate" class="mt-2 hover:bg-slate-200 w-[335px]  justify-center items-center rounded-md duration-200 flex">
                         <p class="">Olhar frente</p>
                         <i class="ri-arrow-go-back-fill ml-1 text-lg"></i>
                     </button>
