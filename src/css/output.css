@@ -1802,6 +1802,10 @@ video {
   padding-top: 90px;
 }
 
+.pt-28{
+  padding-top: 7rem;
+}
+
 .text-center{
   text-align: center;
 }
