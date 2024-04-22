@@ -15,7 +15,7 @@
 
 </head>
 <body class="font-lexend overflow-x-hidden">
-    <header class="px-5 grid place-items-center mx-auto right-0 left-0 fixed z-50">
+    <header class="px-5 grid place-items-center mx-auto right-0 left-0 fixed z-[60]">
         <div id="container" class="bg-white shadow-md mt-4 mx-auto flex justify-center max-w-[1200px] w-full py-3 border-[1px] border-slate-300 rounded-full duration-500">
             <nav class="flex items-center justify-between px-7 max-w-[1200px] w-full">
                 <div class="flex gap-4">
@@ -31,7 +31,7 @@
                     </div>
         
                     <div class="grid place-items-center xl:hidden">
-                        <button id="menu-btn"><i class="text-3xl text-gray-700 z-50 ri-menu-line"></i></button>
+                        <button id="menu-btn"><i class="text-3xl text-gray-700 z-[60] ri-menu-line"></i></button>
                     </div>
                 </div>
     
@@ -62,7 +62,7 @@
         </div>
     </header>
 
-    <div id="menu" class="w-full max-h-0 pt-[90px] overflow-hidden rounded-b-[3rem] fixed z-40 [transition: max-height] duration-500 ease-in-out">
+    <div id="menu" class="w-full max-h-0 pt-[90px] overflow-hidden rounded-b-[3rem] fixed z-50 [transition: max-height] duration-500 ease-in-out">
         <ul class="bg-white py-5 px-10 grid gap-5">
             <li class="border-b-[1px] border-slate-300 pb-5"><a href="#faq" class="text-gray-700">Texto</a></li>
             <li class="border-b-[1px] border-slate-300 pb-5"><a href="#faq" class="text-gray-700">Texto</a></li>
@@ -79,13 +79,19 @@
         <div class="grid place-items-center">
             <div class="grid justify-center xl:w-[1200px] px-5 md:justify-between md:flex md:flex-row-reverse">
                 <div class="grid place-items-center px-5 mx-auto relative">
-                    <img class="w-[180px] z-40" src="/src/img/hand-card.png" style="animation: rotate 3s infinite; transform-origin: left top;" alt="">
+                    <div class="xl:scale-125 z-40">
+                        <img class="w-[180px] z-40" src="/src/img/hand-card.png" style="animation: rotate 3s infinite; transform-origin: left top;" alt="">
+                    </div>
+                  
 
-                    <div class="relative overflow-y-hidden" style="animation: upper 3s infinite;">
-                        <img class="w-[180px] z-30 relative" src="/src/img/hand-phone.png" alt="">
-                        <img class="w-[104px] z-20 absolute top-[3px] right-[22.5px]" style="animation: show 3s infinite;" src="/src/img/profile_phone.png" alt="">
-                        <img class="w-[104px] z-10 absolute top-[3px] right-[22.5px]" src="/src/img/screen-phone.png" alt="">
-                    </div> 
+                    <div class="xl:scale-125 xl:mt-14">
+                        <div class="relative overflow-y-hidden" style="animation: upper 3s infinite;">
+                            <img class="w-[180px] z-30 relative" src="/src/img/hand-phone.png" alt="">
+                            <img class="w-[100px] z-20 absolute top-[3px] right-[26px]" style="animation: show 3s infinite;" src="/src/img/profile_phone.png" alt="">
+                            <img class="w-[100px] z-10 absolute top-[3px] right-[26px]" src="/src/img/screen-phone.png" alt="">
+                        </div> 
+                    </div>
+
                 </div> 
     
                 <div class="">
@@ -103,7 +109,7 @@
                             <p class="text-gray-700 text-sm text-center xl:max-w-[320px]"><span class="font-bold">+5.000</span> empresas confiam na xLinker. Junte-se a eles.</p> 
                         </div>
                     </div> 
-                </div>
+                </div> 
             </div>   
         </div>
     </div>

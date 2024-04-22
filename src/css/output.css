@@ -636,8 +636,8 @@ video {
   right: 1.5rem;
 }
 
-.right-\[22\.5px\]{
-  right: 22.5px;
+.right-\[26px\]{
+  right: 26px;
 }
 
 .top-0{
@@ -678,6 +678,10 @@ video {
 
 .z-50{
   z-index: 50;
+}
+
+.z-\[60\]{
+  z-index: 60;
 }
 
 .mx-5{
@@ -974,8 +978,8 @@ video {
   width: 2rem;
 }
 
-.w-\[104px\]{
-  width: 104px;
+.w-\[100px\]{
+  width: 100px;
 }
 
 .w-\[10px\]{
@@ -2313,6 +2317,18 @@ video {
     margin-top: 2rem;
   }
 
+  .xl\:mt-10{
+    margin-top: 2.5rem;
+  }
+
+  .xl\:mt-1{
+    margin-top: 0.25rem;
+  }
+
+  .xl\:mt-14{
+    margin-top: 3.5rem;
+  }
+
   .xl\:flex{
     display: flex;
   }
@@ -2411,6 +2427,12 @@ video {
 
   .xl\:max-w-\[650px\]{
     max-width: 650px;
+  }
+
+  .xl\:scale-110{
+    --tw-scale-x: 1.1;
+    --tw-scale-y: 1.1;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .xl\:scale-125{
