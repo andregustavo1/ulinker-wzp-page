@@ -7,12 +7,15 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // get url 
+const currentUrl = window.location.origin + window.location.pathname;
+
 window.onload = function() {
-let shareLink = document.getElementById('share-link');
-let currentUrl = window.location.href;
-shareLink.href = "whatsapp://send?text=Confira meu perfil digital: " + currentUrl;
+    let shareLink = document.getElementById('share-link');
+    shareLink.href = "whatsapp://send?text=Confira meu perfil digital: " + currentUrl;
 };
-  
+
+const logo = document.getElementById('logo').src = currentUrl + "src/img/logo.jpg";
+
 const slider = document.getElementById('slider');
 const next = document.getElementById('next');
 const prev = document.getElementById('prev');
