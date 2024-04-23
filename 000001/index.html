@@ -11,25 +11,28 @@
 	<link rel="icon" type="image/png" href="/src/img/favicon.png">
     <link rel="shortcut icon" href="/src/img/favicon.png" type="image/png">
 
-
-    <script src="/000001/src/js/script.js" defer></script>
+    <script src="/src/js/components/config.js" defer></script>
 </head>
 
 <body class="grid place-items-center font-lexend bg-[#f0f0f0] mb-4 overflow-x-hidden">
+
+    <!-- Primary color -->
+    <div id="primary-color" data-color="#883CEB" style="display: none;"></div>
+
     <div>
         <div class="relative grid place-items-center">
-            <div class="w-[375px] h-[120px] bg-gradient-to-r from-violet-700 to-purple-900 rounded-b-3xl shadow-md"></div>
+            <div class="w-[375px] h-[120px] bg-primary rounded-b-3xl shadow-md"></div>
 
             <div class="absolute flex top-10 w-[300px] items-center justify-between">
                 <button id="back" class="opacity-0 flex items-center justify-center w-[36px] h-[36px] bg-white py-1 px-4 rounded-full font-light"><i class="ri-arrow-left-s-line font-black text-2xl"></i></button>
 
-                <a class="flex items-center justify-center w-[36px] h-[36px] bg-white py-1 px-4 rounded-full font-light" href="whatsapp://send?text=Confira meu perfil digital: https://xlinker.com.br/000001/"><i class="ri-share-fill text-xl"></i></a> 
+                <a id="share-link" class="flex items-center justify-center w-[36px] h-[36px] bg-white py-1 px-4 rounded-full font-light" href="#"><i class="ri-share-fill text-xl"></i></a>
             </div>
         </div>
     </div>
 
     <div class="flex justify-center items-center">
-        <img class="absolute w-[145px] h-[145px] mx-auto rounded-full z-50 shadow-xl" src="/000001/src/img/purple-icon-black-text.jpg">
+        <img class="absolute w-[145px] h-[145px] mx-auto rounded-full z-50 shadow-xl object-cover" src="./src/img/logo.jpg">
         <div class="absolute w-[153px] h-[153px] mx-auto rounded-full bg-[#f0f0f0] z-10 shadow-sm"></div>
     </div>
 
@@ -39,7 +42,7 @@
     
             <p class="grid place-items-center text-neutral-700">Cartões Tecnológicos</p>
     
-            <a class="bg-000001 text-white w-[345px] h-[48px] py-1 flex items-center justify-center mt-2 rounded-full text-lg shadow-md" href="data:text/vcard;charset=utf-8,BEGIN:VCARD%0AVERSION:3.0%0AFN:xLinker%0ATEL;TYPE=CELL:+5511916005064%0AEMAIL:xlinker.company@xlinker.com.br%0AEND:VCARD"><i class="ri-add-circle-fill text-3xl mr-2"></i>SALVAR CONTATO</a>
+            <a class="bg-primary text-white w-[345px] h-[48px] py-1 flex items-center justify-center mt-2 rounded-full text-lg shadow-md" href="data:text/vcard;charset=utf-8,BEGIN:VCARD%0AVERSION:3.0%0AFN:xLinker%0ATEL;TYPE=CELL:+5511916005064%0AEMAIL:xlinker.company@xlinker.com.br%0AEND:VCARD"><i class="ri-add-circle-fill text-3xl mr-2"></i>SALVAR CONTATO</a>
         </div>
     
         <div class="w-[345px] border-[1px] rounded-full border-neutral-300 h-[1px] my-8"></div>
@@ -58,7 +61,7 @@
             <div class="bg-[#f0f0f0] w-[345px] border-[2px] rounded-3xl grid place-items-center pt-4 pb-4 shadow-md relative">
                 <h1 class="text-3xl font-medium"><span class="text-xl mr-2 font-normal">PLANO</span>Free</h1>
 
-                <div class="absolute bg-000001 text-white rounded-xl mt-2 w-[360px] h-[75px] top-[55px] grid place-items-center shadow-md">
+                <div class="absolute bg-primary text-white rounded-xl mt-2 w-[360px] h-[75px] top-[55px] grid place-items-center shadow-md">
                     <div>
                         <p class="text-xl"><span class="text-4xl font-medium">R$ 0,00</span>/mês</p>
                     </div>
@@ -71,13 +74,13 @@
                     <p class="flex items-center"><i class="ri-close-fill text-red-500 text-2xl mr-2 font-semibold"></i>Prioridade No Atendimento</p>
                 </div>
     
-                <a class="bg-000001 text-white w-[305px] h-[48px] py-1 flex items-center justify-center mt-4 rounded-full text-lg shadow-md" href="" target="_blank">ASSINAR</a>
+                <a class="bg-primary text-white w-[305px] h-[48px] py-1 flex items-center justify-center mt-4 rounded-full text-lg shadow-md" href="" target="_blank">ASSINAR</a>
             </div>
 
             <div class="bg-[#f0f0f0] w-[345px] border-[2px] rounded-3xl grid place-items-center pt-4 pb-4 mt-6 shadow-md relative">
                 <h1 class="text-3xl font-medium"><span class="text-xl mr-2 font-normal">PLANO</span>Premium</h1>
 
-                <div class="absolute bg-000001 text-white rounded-xl mt-2 w-[360px] h-[75px] top-[55px] grid place-items-center shadow-md">
+                <div class="absolute bg-primary text-white rounded-xl mt-2 w-[360px] h-[75px] top-[55px] grid place-items-center shadow-md">
                     <div>
                         <p class="text-xl"><span class="text-4xl font-medium">R$ 9,90</span>/mês</p>
                     </div>
@@ -90,7 +93,7 @@
                     <p class="flex items-center"><i class="ri-check-fill text-green-500 text-2xl mr-2 font-semibold"></i>Prioridade No Atendimento</p>
                 </div>
     
-                <a class="bg-000001 text-white w-[305px] h-[48px] py-1 flex items-center justify-center mt-4 rounded-full text-lg shadow-md" href="" target="_blank">ASSINAR</a>
+                <a class="bg-primary text-white w-[305px] h-[48px] py-1 flex items-center justify-center mt-4 rounded-full text-lg shadow-md" href="" target="_blank">ASSINAR</a>
             </div>
         </div>
         
@@ -119,7 +122,7 @@
                 <a class="flex items-center mt-2 bg-slate-600 py-1 px-4 rounded-full text-white font-light" href="tel:+5511916005064"><i class="ri-phone-fill text-xl mr-2"></i>LIGAR</a>
             </div>
             
-            <!-- <div class="grid justify-center mt-4">
+            <div class="grid justify-center mt-4">
                 <div id="slider-wrapper" class="flex w-[345px] mx-auto relative" style="scrollbar-width: none; -ms-overflow-style: none;">
                     <button id="prev" class="ri-arrow-left-s-line absolute text-3xl w-[36px] h-[36px] left-2 bottom-24 rounded-full bg-[#ffffff7f]"></button>
                     <div id="slider" class="flex overflow-x-auto snap-mandatory snap-x scroll-smooth gap-3" style="scrollbar-width: none; -ms-overflow-style: none;">
@@ -155,8 +158,8 @@
                 </div>
             </div>
             
-            <a class="bg-000001 text-white w-[345px] h-[48px] py-1 flex items-center justify-center mt-2 rounded-full text-lg shadow-md" href="https://www.xlinker.com.br/card/"><i class="ri-add-circle-fill text-3xl mr-2"></i>CRIAR MEU CARTÃO</a>
-         -->
+            <a class="bg-primary text-white w-[345px] h-[48px] py-1 flex items-center justify-center mt-2 rounded-full text-lg shadow-md" href="https://www.xlinker.com.br/card/"><i class="ri-add-circle-fill text-3xl mr-2"></i>CRIAR MEU CARTÃO</a>
+        
             <div class="mt-4 flex justify-between w-[345px] bg-[#f0f0f0] px-5 py-4 rounded-3xl shadow-md gap-[25px]">
                 <a class="bg-gradient-to-tr from-purple-400 via-pink-500 to-red-500 w-[85px] h-[85px] grid place-items-center rounded-3xl shadow-md" href="https://www.instagram.com/xlinker_/" target="_blank">
                     <i class="ri-instagram-line text-5xl text-white"></i>
@@ -202,7 +205,7 @@
 
                 <div class="border-b-[1px] border-[#a4a4a4] w-[345px]"></div>
 
-                <button id="assBtn" class="bg-000001 text-white w-[305px] h-[48px] py-1 flex items-center justify-center mt-2 rounded-full text-lg shadow-md">VER PLANOS</button>
+                <button id="assBtn" class="bg-primary text-white w-[305px] h-[48px] py-1 flex items-center justify-center mt-2 rounded-full text-lg shadow-md">VER PLANOS</button>
             </div>
             
             <div class="bg-[#f0f0f0] w-[345px] rounded-2xl grid place-items-center mt-4 pt-2 pb-4 shadow-md">
@@ -216,7 +219,7 @@
                     <p>Mogi das Cruzes-SP</p>
                 </div>
             
-                <a class="flex items-center mt-2 bg-000001 py-1 px-4 rounded-full text-white font-light shadow-md" href="https://www.google.com/maps/place/Mogi+Shopping/@-23.5158812,-46.1843641,17z/data=!3m1!4b1!4m6!3m5!1s0x94cdd836a9f9cde1:0x227fb73b77deb77a!8m2!3d-23.5158813!4d-46.1794932!16s%2Fg%2F121kx0r_?entry=ttu" target="_blank"><i class="ri-navigation-line text-xl mr-2"></i>LOCALIZAR</a>
+                <a class="flex items-center mt-2 bg-primary py-1 px-4 rounded-full text-white font-light shadow-md" href="https://www.google.com/maps/place/Mogi+Shopping/@-23.5158812,-46.1843641,17z/data=!3m1!4b1!4m6!3m5!1s0x94cdd836a9f9cde1:0x227fb73b77deb77a!8m2!3d-23.5158813!4d-46.1794932!16s%2Fg%2F121kx0r_?entry=ttu" target="_blank"><i class="ri-navigation-line text-xl mr-2"></i>LOCALIZAR</a>
             </div>
         </div>
 

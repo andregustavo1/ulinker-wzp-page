@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: ["./src/**/*.{html,js}", "./index.html", "./0*/**/*.html", "./0*/**/*.js", "./card/**/*.html","./card/**/*.js"],
+    content: ["./src/**/*.{html,js}", "./index.html", "./0*/**/*.html", "./card/**/*.html","./card/**/*.js"],
   theme: {
     extend: {
         backgroundImage: theme => ({
@@ -10,8 +10,9 @@ module.exports = {
             lexend: ["Lexend Deca", "sans-serif"],
             comfortaa: ['comfortaa', 'sans-serif'],
         },
+
         colors: {
-            '000001': '#883CEB',
+            primary: 'var(--primary-color)',
         },
     },
   },
