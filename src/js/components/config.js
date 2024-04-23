@@ -16,6 +16,26 @@ window.onload = function() {
 
 const logo = document.getElementById('logo').src = currentUrl + "/src/img/logo.jpg";
 
+// logo for vcard
+fetch(currentUrl + "/src/img/logo.jpg")
+.then(response => response.blob())
+.then(blob => {
+  const reader = new FileReader();
+  reader.onloadend = function() {
+    const base64data = reader.result;
+
+    // Create the vCard
+    const vCard = `BEGIN:VCARD%0AVERSION:3.0%0AFN:xLinker%0ATEL;TYPE=CELL:+5511916005064%0AEMAIL:xlinker.company@xlinker.com.br%0APHOTO;ENCODING=b;TYPE=JPEG:${base64data}%0AEND:VCARD`;
+
+    // Set the href of the vCard link
+    document.getElementById('vcard').href = `data:text/vcard;charset=utf-8,${vCard}`;
+  }
+  reader.readAsDataURL(blob);
+})
+.catch(error => console.error(error));
+
+
+
 const slider = document.getElementById('slider');
 const next = document.getElementById('next');
 const prev = document.getElementById('prev');
