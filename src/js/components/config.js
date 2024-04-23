@@ -16,13 +16,15 @@ window.onload = function() {
 
 const logo = document.getElementById('logo').src = currentUrl + "/src/img/logo.jpg";
 
-// logo for vcard
 fetch(currentUrl + "/src/img/logo.jpg")
 .then(response => response.blob())
 .then(blob => {
   const reader = new FileReader();
   reader.onloadend = function() {
-    const base64data = reader.result;
+    let base64data = reader.result;
+
+    // Remove the prefix from the base64 string
+    base64data = base64data.replace(/^data:image\/jpeg;base64,/, "");
 
     // Create the vCard
     const vCard = `BEGIN:VCARD%0AVERSION:3.0%0AFN:xLinker%0ATEL;TYPE=CELL:+5511916005064%0AEMAIL:xlinker.company@xlinker.com.br%0APHOTO;ENCODING=b;TYPE=JPEG:${base64data}%0AEND:VCARD`;
