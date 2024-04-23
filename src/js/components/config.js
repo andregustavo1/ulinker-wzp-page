@@ -14,7 +14,7 @@ window.onload = function() {
     shareLink.href = "whatsapp://send?text=Confira meu perfil digital: " + currentUrl;
 };
 
-const logo = document.getElementById('logo').src = currentUrl + "src/img/logo.jpg";
+const logo = document.getElementById('logo').src = currentUrl + "/src/img/logo.jpg";
 
 const slider = document.getElementById('slider');
 const next = document.getElementById('next');
