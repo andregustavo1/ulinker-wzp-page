@@ -64,3 +64,8 @@
         transform: translateY(10px);
     }
   }
+
+.flip {
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+}

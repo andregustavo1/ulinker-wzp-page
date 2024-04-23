@@ -1,73 +1,44 @@
 const btnBlack = document.getElementById('btnBlack');
 const btnWhite = document.getElementById('btnWhite');
 
-const cardBlackFront= document.getElementById('cardBlackFront');
-const cardWhiteFront = document.getElementById('cardWhiteFront');
-
+const cardBlack = document.getElementById('cardBlack');
 const cardBlackBack = document.getElementById('cardBlackBack');
+const cardBlackFront= document.getElementById('cardBlackFront');
+
+const cardWhite = document.getElementById('cardWhite');
+const cardWhiteFront = document.getElementById('cardWhiteFront');
 const cardWhiteBack = document.getElementById('cardWhiteBack');
 
-const cTaLinks = document.querySelectorAll('.cTa');
+const rotate = document.getElementById('rotate');
+const rotateText = document.getElementById('rotate-text');
+
+rotate.addEventListener('click', function() {
+    if (rotateText.textContent === 'Olhar trás') {
+        rotateText.textContent = 'Olhar frente';
+    } else {
+        rotateText.textContent = 'Olhar trás';
+    };
+});
+
+rotate.addEventListener('click', function() {
+    cardBlack.classList.toggle('flip');
+    cardWhite.classList.toggle('flip');
+});
 
 btnBlack.addEventListener('click', function() {
     btnBlack.classList.add('selected', 'box-shadow');
     btnWhite.classList.remove('selected', 'box-shadow');
 
-    cardWhiteBack.classList.add('hidden');
-    cardWhiteFront.classList.add('hidden');
-
-    if (btnBlack.classList.contains('back')) {
-        cardBlackBack.classList.remove('hidden');
-    } else {
-        cardBlackFront.classList.remove('hidden');
-    };
+    cardBlack.classList.remove('hidden');
+    cardWhite.classList.add('hidden');
 });
 
 btnWhite.addEventListener('click', function() {
     btnWhite.classList.add('selected', 'box-shadow');
     btnBlack.classList.remove('selected', 'box-shadow');
 
-    cardBlackBack.classList.add('hidden');
-    cardBlackFront.classList.add('hidden');
-
-    if (btnWhite.classList.contains('back')) {
-        cardWhiteBack.classList.remove('hidden');
-    } else {
-        cardWhiteFront.classList.remove('hidden');
-    };
-});
-
-const btnRotate = document.getElementById('rotate');
-const pRotate = btnRotate.querySelector('p');
-
-btnRotate.addEventListener('click', function() {
-    if (btnBlack.classList.contains('selected')) {
-        cardBlackFront.classList.toggle('hidden');
-        cardBlackBack.classList.toggle('hidden');
-    };
-
-    if (btnWhite.classList.contains('selected')) {
-        cardWhiteFront.classList.toggle('hidden');
-        cardWhiteBack.classList.toggle('hidden');
-    };
-
-    if (pRotate.textContent === 'Olhar trás') {
-        pRotate.textContent = 'Olhar frente';
-    } else {
-        pRotate.textContent = 'Olhar trás';
-    };
-
-    if (pRotate.textContent === 'Olhar frente') {
-        btnBlack.classList.add('back');
-        btnWhite.classList.add('back');
-        btnBlack.classList.remove('front');
-        btnWhite.classList.remove('front');
-    } else {
-        btnBlack.classList.remove('back');
-        btnWhite.classList.remove('back');
-        btnBlack.classList.add('front');
-        btnWhite.classList.add('front');
-    };
+    cardWhite.classList.remove('hidden');
+    cardBlack.classList.add('hidden');
 });
 
 const fileUpload = document.getElementById('file-upload');
@@ -93,9 +64,10 @@ fileUpload.addEventListener('change', function() {
     h1Black.remove();
     h1White.remove();
 
-    if (cardBlackFront.classList.contains('hidden') && btnBlack.classList.contains('selected') || cardWhiteFront.classList.contains('hidden') && btnWhite.classList.contains('selected')) {
-        btnRotate.click();
+    if (!cardBlack.classList.contains('flip') && btnBlack.classList.contains('selected') || !cardWhite.classList.contains('flip') && btnWhite.classList.contains('selected')) {
+        rotate.click();
     }
+    
 });
 
 const inputName = document.getElementById('inputName');
@@ -195,3 +167,4 @@ subButton.addEventListener('click', function() {
     quantityElement.textContent = quantity;
   }
 });
+
