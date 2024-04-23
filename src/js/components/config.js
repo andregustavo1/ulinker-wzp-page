@@ -1,12 +1,45 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const primaryColorElement = document.getElementById("primary-color");
-    if (primaryColorElement) {
-      const primaryColor = primaryColorElement.getAttribute("data-color");
-      document.documentElement.style.setProperty('--primary-color', primaryColor);
-    };
-});
+// Informations
+const name = 'xLinker';
+const description = 'Cartões Tecnológicos';
+const color = '#883CEB';
+const telNumber = '+55 11 91600-5064';
+const email = 'xlinker@xlinker.com.br'
+const website = 'www.xlinker.com.br';
 
-// get url 
+// Name
+const ValueTextContainer = document.querySelector('text-container');
+ValueTextContainer.setAttribute('name', `${name}`);
+ValueTextContainer.setAttribute('description', `${description}`);
+
+document.title = name;
+
+// color
+document.documentElement.style.setProperty('--primary-color',`${color}`);
+
+// Tel
+const whatsLink = document.getElementById('whats-link');
+const whatsText = document.getElementById('whats-text');
+whatsLink.href = `https://wa.me/${telNumber.replace(/[+ -]/g, '')}`;
+whatsText.textContent = telNumber.replace(/^\+55/, '');
+
+const telLink = document.getElementById('telLink');
+telLink.href = `tel:${telNumber.replace(/[ -]/g, '')}`;
+
+// E-mail
+const emailLink = document.getElementById('email');
+const emailText = document.getElementById('emailText');
+
+emailLink.href = `mailto:${email}`;
+emailText.textContent = email;
+
+// Website
+const websiteLink = document.getElementById('website');
+websiteLink.href = `https://${website}`;
+
+const websiteText = document.getElementById('website-text');
+websiteText.textContent = website;
+
+// Get url 
 const currentUrl = window.location.origin + window.location.pathname;
 
 window.onload = function() {
@@ -16,6 +49,7 @@ window.onload = function() {
 
 const logo = document.getElementById('logo').src = currentUrl + "/src/img/logo.jpg";
 
+// vCard
 fetch(currentUrl + "/src/img/logo.jpg")
 .then(response => response.blob())
 .then(blob => {
@@ -27,7 +61,7 @@ fetch(currentUrl + "/src/img/logo.jpg")
     base64data = base64data.replace(/^data:image\/jpeg;base64,/, "");
 
     // Create the vCard
-    const vCard = `BEGIN:VCARD%0AVERSION:3.0%0AFN:xLinker%0ATEL;TYPE=CELL:+5511916005064%0AEMAIL:xlinker.company@xlinker.com.br%0APHOTO;ENCODING=b;TYPE=JPEG:${base64data}%0AEND:VCARD`;
+    const vCard = `BEGIN:VCARD%0AVERSION:3.0%0AFN:${name}%0ATEL;TYPE=CELL:${telNumber}%0AEMAIL:${email}%0APHOTO;ENCODING=b;TYPE=JPEG:${base64data}%0AEND:VCARD`;
 
     // Set the href of the vCard link
     document.getElementById('vcard').href = `data:text/vcard;charset=utf-8,${vCard}`;
@@ -35,8 +69,6 @@ fetch(currentUrl + "/src/img/logo.jpg")
   reader.readAsDataURL(blob);
 })
 .catch(error => console.error(error));
-
-
 
 const slider = document.getElementById('slider');
 const next = document.getElementById('next');

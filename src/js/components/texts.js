@@ -1,4 +1,4 @@
-class Texts extends HTMLElement {
+class textContainer extends HTMLElement {
     constructor() {
         super();
 
@@ -16,12 +16,12 @@ class Texts extends HTMLElement {
         textContainer.setAttribute('class', 'font-lexend mt-[72px] grid place-items-center');
 
         const name = document.createElement('h1');
-        name.setAttribute('class', 'name text-3xl font-semibold');
-        name.textContent = this.querySelector('name').textContent;
+        name.setAttribute('class', 'text-3xl font-semibold');
+        name.textContent = this.getAttribute('name');
 
         const description = document.createElement('p');
         description.setAttribute('class', 'text-gray-700');
-        description.textContent = this.querySelector('description').textContent;
+        description.textContent = this.getAttribute('description');
 
         textContainer.appendChild(name);
         textContainer.appendChild(description);
@@ -30,4 +30,4 @@ class Texts extends HTMLElement {
     }
 }
 
-customElements.define('text-container', Texts);
+customElements.define('text-container', textContainer);
