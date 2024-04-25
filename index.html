@@ -536,55 +536,6 @@
         </div>
     </footer>
 
-    <style>    
-        @keyframes slide {
-          0% {
-            opacity: 0;
-            translate: -100vw 0;
-          }
-          100% {
-            opacity: 1;
-            translate: 0 0;
-          }
-        }
-
-        .carousel__item[data-pos="0"] {
-          z-index: 5;
-        }
-        
-        .carousel__item[data-pos="-1"],
-        .carousel__item[data-pos="1"] {
-          opacity: 0.7;
-          filter: blur(1px) grayscale(10%);
-        }
-        
-        .carousel__item[data-pos="-1"] {
-          transform: translateX(-40%) scale(.9);
-          z-index: 4;
-        }
-        
-        .carousel__item[data-pos="1"] {
-          transform: translateX(40%) scale(.9);
-          z-index: 4;
-        }
-        
-        .carousel__item[data-pos="-2"],
-        .carousel__item[data-pos="2"] {
-          opacity: 0.4;
-          filter: blur(3px) grayscale(20%);
-        }
-        
-        .carousel__item[data-pos="-2"] {
-          transform: translateX(-70%) scale(.8);
-          z-index: 3;
-        }
-        
-        .carousel__item[data-pos="2"] {
-          transform: translateX(70%) scale(.8);
-          z-index: 3;
-        }
-    </style>
-
     <style>
         ::-webkit-scrollbar {
           width: 5px;

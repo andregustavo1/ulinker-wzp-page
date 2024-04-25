@@ -251,4 +251,3 @@ faq8.addEventListener("click", function () {
   faq8.classList.toggle("bg-[#8234E9]");
   faq8.classList.toggle("text-white");
 });
-

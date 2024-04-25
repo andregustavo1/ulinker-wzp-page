@@ -20,8 +20,11 @@
     40% {
       transform: rotate(0deg) translateY(30px);
     }
-    80% {
+    60% {
       transform: rotate(0deg) translateY(30px);
+    }
+    80% {
+      transform: rotate(-10deg) translateY(0px);
     }
     100% {
       transform: rotate(-10deg) translateY(0px);
@@ -57,8 +60,11 @@
     40% {
         transform: translateY(0);
     }
-    80% {
+    60% {
         transform: translateY(0);
+    }
+    80% {
+      transform: translateY(10px);
     }
     100% {
         transform: translateY(10px);
@@ -68,4 +74,40 @@
 .flip {
     transform: rotateY(180deg);
     transform-style: preserve-3d;
+}
+
+.carousel__item[data-pos="0"] {
+  z-index: 5;
+}
+
+.carousel__item[data-pos="-1"],
+.carousel__item[data-pos="1"] {
+  opacity: 0.7;
+  filter: blur(1px) grayscale(10%);
+}
+
+.carousel__item[data-pos="-1"] {
+  transform: translateX(-40%) scale(.9);
+  z-index: 4;
+}
+
+.carousel__item[data-pos="1"] {
+  transform: translateX(40%) scale(.9);
+  z-index: 4;
+}
+
+.carousel__item[data-pos="-2"],
+.carousel__item[data-pos="2"] {
+  opacity: 0.4;
+  filter: blur(3px) grayscale(20%);
+}
+
+.carousel__item[data-pos="-2"] {
+  transform: translateX(-70%) scale(.8);
+  z-index: 3;
+}
+
+.carousel__item[data-pos="2"] {
+  transform: translateX(70%) scale(.8);
+  z-index: 3;
 }
