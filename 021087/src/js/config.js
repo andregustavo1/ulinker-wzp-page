@@ -1,11 +1,11 @@
 // Informations
-const name = 'Template';
-const description = 'Descriçao';
-const color = '#333333';
-const telNumber = '+55 11 99999-9999';
-const email = 'exemplo@xlinker.com.br'
-const website = 'www.exemplo.com.br';
-const pix = '1234567890';
+const name = 'Transuniverso';
+const description = 'Transportadora';
+const color = '#C40000';
+const telNumber = '+55 11 94013-4501';
+const email = 'atendimento@transuniverso.com.br'
+const website = 'www.transuniverso.com.br';
+const pix = '';
 
 // Name
 const ValueTextContainer = document.querySelector('text-container');

@@ -84,7 +84,7 @@ inputName.addEventListener('input', function() {
     }
 });
 
-document.getElementById('btnReview').addEventListener('click', function() {
+document.getElementById('btn-to-review').addEventListener('click', function() {
     document.getElementById('review').scrollIntoView({
         behavior: 'smooth'
     });
@@ -104,6 +104,7 @@ const observer = new IntersectionObserver(function(entries) {
 }, { threshold: 0.1 });
 
 observer.observe(ctaBtn);
+
 
 const sliders = document.querySelectorAll('#slider img');
 const navs = document.querySelectorAll('#slider-nav a');
@@ -148,23 +149,28 @@ sliders.forEach(slider => {
     observerNav.observe(slider);
 });
 
-const addButton = document.getElementById('add');
-const subButton = document.getElementById('sub');
-const quantityElement = document.getElementById('quantity');
+const reviewBtn = document.getElementById('btn-review');
+const reviewMsg = document.getElementById('review-msg');
+const reviewClose = document.getElementById('review-close');
+const blur = document.getElementById('blur');
 
-addButton.addEventListener('click', function() {
-  let quantity = parseInt(quantityElement.textContent, 10);
-  if (quantity < 10) {
-    quantity += 1;
-    quantityElement.textContent = quantity;
-  }
+reviewBtn.addEventListener('click', function(event) {
+    event.stopPropagation();
+    reviewMsg.classList.remove('hidden');
+    blur.classList.remove('hidden');
 });
 
-subButton.addEventListener('click', function() {
-  let quantity = parseInt(quantityElement.textContent, 10);
-  if (quantity > 1) {
-    quantity -= 1;
-    quantityElement.textContent = quantity;
-  }
+function closeMsg() {
+    reviewMsg.classList.add('hidden');
+    blur.classList.add('hidden');
+}
+
+reviewClose.addEventListener('click', function() {
+    closeMsg()
 });
 
+document.addEventListener('click', function(event) {
+    if (!reviewMsg.contains(event.target)) {
+        closeMsg();
+    }
+});

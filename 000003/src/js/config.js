@@ -1,11 +1,11 @@
 // Informations
-const name = 'Template';
-const description = 'Descriçao';
-const color = '#333333';
-const telNumber = '+55 11 99999-9999';
-const email = 'exemplo@xlinker.com.br'
-const website = 'www.exemplo.com.br';
-const pix = '1234567890';
+const name = 'Dwell';
+const description = 'Training Center';
+const color = '#0294A9';
+const telNumber = '+55 11 97523-9240';
+const email = ''
+const website = 'www.dwelltrainingcenter.com.br';
+const pix = '';
 
 // Name
 const ValueTextContainer = document.querySelector('text-container');
@@ -95,6 +95,7 @@ function slider() {
 
 slider();
 
+// Pix
 const container = document.getElementById('container');
 const pixBtn = document.getElementById('pixBtn');
 const pixArea = document.getElementById('pixArea');
@@ -115,14 +116,12 @@ back.addEventListener('click', () => {
     back.classList.add('opacity-0');
 });
 
-if (pix === '') {
-    pixBtn.classList.add('hidden');
-}
-
 const copyBtn = document.getElementById('copyBtn');
 const pixKey = document.getElementById('pixKey');
 
-pixKey.textContent = pix;
+if (pix === '') {
+    pixBtn.classList.add('hidden');
+}
 
 copyBtn.addEventListener('click', () => {
     navigator.clipboard.writeText(pixKey.innerText);
