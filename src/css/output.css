@@ -1120,6 +1120,14 @@ video {
   width: 100vw;
 }
 
+.w-\[3350px\]{
+  width: 3350px;
+}
+
+.w-\[325px\]{
+  width: 325px;
+}
+
 .min-w-\[100px\]{
   min-width: 100px;
 }
@@ -1196,6 +1204,18 @@ video {
 
 .rotate-\[-45deg\]{
   --tw-rotate: -45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.scale-110{
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.scale-125{
+  --tw-scale-x: 1.25;
+  --tw-scale-y: 1.25;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -2358,6 +2378,10 @@ video {
     width: 300px;
   }
 
+  .xl\:w-\[335px\]{
+    width: 335px;
+  }
+
   .xl\:w-\[375px\]{
     width: 375px;
   }
@@ -2388,6 +2412,14 @@ video {
 
   .xl\:w-full{
     width: 100%;
+  }
+
+  .xl\:w-\[325px\]{
+    width: 325px;
+  }
+
+  .xl\:w-\[425px\]{
+    width: 425px;
   }
 
   .xl\:min-w-\[300px\]{
