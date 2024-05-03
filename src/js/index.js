@@ -58,7 +58,7 @@ const observer = new IntersectionObserver((entries) => {
       }
   });
 }, {
-  rootMargin: '-30% 0px'
+  rootMargin: '-20% 0px'
 });
 
 const elements = document.querySelectorAll('.scroll-animation');
