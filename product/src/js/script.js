@@ -20,6 +20,8 @@ rotate.addEventListener('click', function() {
     };
 });
 
+const cTa = document.querySelectorAll('.cTa');
+
 rotate.addEventListener('click', function() {
     cardBlack.classList.toggle('flip');
     cardWhite.classList.toggle('flip');
@@ -31,6 +33,10 @@ btnBlack.addEventListener('click', function() {
 
     cardBlack.classList.remove('hidden');
     cardWhite.classList.add('hidden');
+
+    cTa.forEach(link => {
+        link.href = 'https://seguro.xlinker.com.br/r/50X7QU3TVC';
+    });
 });
 
 btnWhite.addEventListener('click', function() {
@@ -39,6 +45,10 @@ btnWhite.addEventListener('click', function() {
 
     cardWhite.classList.remove('hidden');
     cardBlack.classList.add('hidden');
+
+    cTa.forEach(link => {
+        link.href = 'https://seguro.xlinker.com.br/r/RUK2YRCJDX';
+    });
 });
 
 const fileUpload = document.getElementById('file-upload');
@@ -104,7 +114,6 @@ const observer = new IntersectionObserver(function(entries) {
 }, { threshold: 0.1 });
 
 observer.observe(ctaBtn);
-
 
 const sliders = document.querySelectorAll('#slider img');
 const navs = document.querySelectorAll('#slider-nav a');

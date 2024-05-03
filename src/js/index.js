@@ -5,7 +5,7 @@ const header = document.querySelector("header");
 const headerContainer = header.querySelector("#container");
 
 menuButton.addEventListener("click", function () {
-    menu.classList.toggle("max-h-[442px]");
+    menu.classList.toggle("max-h-[250px]");
     menu.classList.toggle("shadow-md");
     headerContainer.classList.toggle("shadow-md");
     menu.classList.toggle("bg-white");
@@ -16,7 +16,7 @@ menuButton.addEventListener("click", function () {
 });
 
 function closeMenu() {
-    menu.classList.remove("max-h-[442px]", "open");
+    menu.classList.remove("max-h-[250px]", "open");
     menu.classList.add("max-h-0");
     menu.classList.remove("bg-white");
     menu.classList.remove("shadow-md");
