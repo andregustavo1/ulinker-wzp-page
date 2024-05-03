@@ -12,12 +12,12 @@
     <link rel="shortcut icon" href="/product/src/img/favicon.png" type="image/png">
     <script src="/product/src/js/script.js" defer></script>
 </head>
-<body class="font-comfortaa">
+<body class="font-lexend">
     <header class="w-full z-50 h-[70px] xl:h-[80px] bg-white shadow-md shadow- flex justify-center py-3 md:py-4 px-5">
         <nav class="grid place-items-center w-[335px] md:w-[700px] xl:w-[1200px]">
             <div>
                 <a href="https://www.xlinker.com.br">
-                    <img class="w-[150px] xl:w-[200px]" src="../product/src/img/purple-icon-black-text.png" alt="">
+                    <img class="w-[150px] xl:w-[200px]" src="/product/src/img/purple-icon-black-text.png" alt="">
                 </a>
             </div>
         </nav>
@@ -80,7 +80,7 @@
                 <div class="">
                     <div class="xl:w-[400px] grid place-items-center">
                         <div class="w-[335px] xl:w-[400px] mt-8 xl:mt-0">
-                            <h1 class="text-2xl xl:text-3xl font-bold">Cartão Tecnológico</h1>
+                            <h1 class="text-2xl xl:text-3xl font-semibold">Cartão Tecnológico</h1>
                             <!-- <p class="mt-2">Modernize suas conexões profissionais com nosso inovador cartão tecnológico. Substituindo os cartões de visita de papel.</p> -->
                         </div>
             
@@ -96,7 +96,7 @@
             
                         <div class="mt-4 w-[335px] xl:w-[400px]">
                             <p class="text-sm xl:text-base text-neutral-500 line-through">R$ 120,00</p>
-                            <h1 class="text-2xl xl:text-3xl font-bold">R$ 79,90</h1>
+                            <h1 class="text-2xl xl:text-3xl font-semibold">R$ 79,90</h1>
                         </div>
                     </div>
                 </div>
@@ -121,7 +121,7 @@
                         <input id="file-upload" type="file" style="display:none;">
                     </div>
         
-                    <div id="card-container" class="relative" style="perspective: 1000px;">
+                    <div id="card-container" class="relative font-comfortaa" style="perspective: 1000px;">
                         <div id="cardBlack" style="transition: transform 800ms; transform-style: preserve-3d;">
                             <div class="opacity-0">
                                 <div class="w-[335px] h-[208px]"></div>
@@ -135,7 +135,7 @@
                                         <img class="w-[64px]" src="../product/src/img/Qr Codes.png" alt="">
                                         <img class="w-[16px] ml-1" src="../product/src/img/nfc-white.png" alt="">
                                         <div class="bg-white h-[40px] border-[1px] border-white rounded-3xl ml-2"></div>
-                                        <h1 id="nameBlackCard" class="text-white ml-2 text-xl font-comfortaa">SEU NOME AQUI</h1>
+                                        <h1 id="nameBlackCard" class="text-white ml-2 text-xl">SEU NOME AQUI</h1>
                                     </div>
                                 </div>
                             </div>
@@ -165,7 +165,7 @@
                                         <img class="w-[64px]" src="../product/src/img/qrcode-white.png" alt="">
                                         <img class="w-[16px] ml-1" src="../product/src/img/nfc-black.png" alt="">
                                         <div class="bg-black h-[40px] border-[1px] border-black rounded-3xl ml-2"></div>
-                                        <h1 id="nameWhiteCard" class=" ml-2 text-xl font-comfortaa">SEU NOME AQUI</h1>
+                                        <h1 id="nameWhiteCard" class=" ml-2 text-xl">SEU NOME AQUI</h1>
                                     </div>
                                 </div>
                             </div>
@@ -204,20 +204,20 @@
         <div class="w-[335px] flex items-center justify-between">
             <div>
                 <p class="text-sm text-neutral-500 line-through">R$ 120,00</p>
-                <h1 class="text-2xl font-bold text-green-600">R$ 79,90</h1>
+                <h1 class="text-2xl font-semibold text-green-600">R$ 79,90</h1>
             </div>
     
             <div class="grid place-items-center">
-                <a href="https://seguro.xlinker.com.br/r/50X7QU3TVC" class="cTa bg-green-500 w-[155px] rounded-[10px] gap-2 py-3 px-6 shadow-md shadow-green-950 text-white flex items-center justify-center border-2 border-transparent hover:border-green-500 hover:bg-transparent hover:text-green-500 duration-300 cursor-pointer font-bold">COMPRAR</a>
+                <a href="https://seguro.xlinker.com.br/r/50X7QU3TVC" class="cTa bg-green-500 w-[155px] rounded-[10px] gap-2 py-3 px-6 shadow-md shadow-green-950 text-white flex items-center justify-center border-2 border-transparent hover:border-green-500 hover:bg-transparent hover:text-green-500 duration-300 cursor-pointer font-semibold">COMPRAR</a>
             </div>
         </div>
     </div>
 
     <div id="review" class="grid place-items-center pt-10 px-5">
-        <h1 class="text-2xl font-bold">Avaliações</h1>
+        <h1 class="text-2xl font-semibold">Avaliações</h1>
 
         <div class="grid place-items-center mt-4 w-[335px]">
-            <h1 class="text-5xl font-bold">4.8</h1>
+            <h1 class="text-5xl font-medium">4.8</h1>
 
             <div class="flex items-center justify-center ">
                 <i class="ri-star-fill text-yellow-400 text-2xl"></i>
@@ -227,7 +227,7 @@
                 <i class="ri-star-half-fill text-yellow-400 text-2xl"></i>
             </div>
 
-            <button id="btn-review" class="mt-4 w-[225px] font-bold bg-slate-200 hover:bg-slate-300 py-2 rounded-md duration-300">AVALIAR PRODUTO</button>
+            <button id="btn-review" class="mt-4 w-[225px] font-semibold bg-slate-200 hover:bg-slate-300 py-2 rounded-md duration-300">AVALIAR PRODUTO</button>
         </div>
 
         <div class="w-full max-w-[1160px] h-[1px] border-b-[1px] border-[#bbbbbb] my-8"></div>
@@ -555,7 +555,8 @@
 
             <div class="gap-2">
                 <div class="text-center"><i class="ri-map-pin-2-fill"></i> São Paulo, Brasil</div>
-                <div class="text-center">xLinker. Todos os direitos reservados <i class="ri-copyright-line"></i>2024.</div>
+                <div class="text-center"><i class="ri-copyright-line"></i>2024 xLinker. Todos os direitos reservados.</div>
+                <div class="text-center">CNPJ: 99.233.813/0001-52</div>
             </div>
         </div>
     </footer>
