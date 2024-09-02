@@ -94,11 +94,11 @@ inputName.addEventListener('input', function() {
     }
 });
 
-document.getElementById('btn-to-review').addEventListener('click', function() {
-    document.getElementById('review').scrollIntoView({
-        behavior: 'smooth'
-    });
-});
+// document.getElementById('btn-to-review').addEventListener('click', function() {
+//     document.getElementById('review').scrollIntoView({
+//         behavior: 'smooth'
+//     });
+// });
 
 const ctaBtn = document.getElementById('ctaBtn');
 const floatingButton = document.getElementById('floatingButton');
@@ -163,23 +163,23 @@ const reviewMsg = document.getElementById('review-msg');
 const reviewClose = document.getElementById('review-close');
 const blur = document.getElementById('blur');
 
-reviewBtn.addEventListener('click', function(event) {
-    event.stopPropagation();
-    reviewMsg.classList.remove('hidden');
-    blur.classList.remove('hidden');
-});
+// reviewBtn.addEventListener('click', function(event) {
+//     event.stopPropagation();
+//     reviewMsg.classList.remove('hidden');
+//     blur.classList.remove('hidden');
+// });
 
-function closeMsg() {
-    reviewMsg.classList.add('hidden');
-    blur.classList.add('hidden');
-}
+// function closeMsg() {
+//     reviewMsg.classList.add('hidden');
+//     blur.classList.add('hidden');
+// }
 
-reviewClose.addEventListener('click', function() {
-    closeMsg()
-});
+// reviewClose.addEventListener('click', function() {
+//     closeMsg()
+// });
 
-document.addEventListener('click', function(event) {
-    if (!reviewMsg.contains(event.target)) {
-        closeMsg();
-    }
-});
+// document.addEventListener('click', function(event) {
+//     if (!reviewMsg.contains(event.target)) {
+//         closeMsg();
+//     }
+// });
