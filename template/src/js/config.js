@@ -3,7 +3,7 @@ const name = 'Template';
 const description = 'Descriçao';
 const color = '#333333';
 const telNumber = '+55 11 99999-9999';
-const email = 'exemplo@xlinker.com.br'
+const email = 'exemplo@exemplo.com.br'
 const website = 'www.exemplo.com.br';
 const pix = '1234567890';
 
@@ -111,7 +111,7 @@ pixBtn.addEventListener('click', () => {
 back.addEventListener('click', () => {
     container.classList.remove('hidden');
     pixArea.classList.add('hidden');
-    assArea.classList.add('hidden');
+    // assArea.classList.add('hidden');
     back.classList.add('opacity-0');
 });
 
@@ -134,12 +134,12 @@ copyBtn.addEventListener('click', () => {
     }, 1200);
 });
 
-const assBtn = document.getElementById('assBtn');
-const assArea = document.getElementById('assArea');
+// const assBtn = document.getElementById('assBtn');
+// const assArea = document.getElementById('assArea');
 
-assBtn.addEventListener('click', () => {
-    container.classList.add('hidden');
-    assArea.classList.remove('hidden');
-    back.classList.remove('opacity-0');
-    window.scrollTo(0, 0);
-});
+// assBtn.addEventListener('click', () => {
+//     container.classList.add('hidden');
+//     assArea.classList.remove('hidden');
+//     back.classList.remove('opacity-0');
+//     window.scrollTo(0, 0);
+// });

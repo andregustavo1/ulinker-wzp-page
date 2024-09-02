@@ -13,7 +13,7 @@ class grayShape extends HTMLElement {
 
     build() {
         const grayShape = document.createElement('div');
-        grayShape.setAttribute('class', 'font-lexend grid place-items-center w-[345px] bg-[#f0f0f0] px-5 py-4 rounded-3xl shadow-md mt-4');
+        grayShape.setAttribute('class', 'font-lexend grid place-items-center w-[345px] bg-[#f0f0f0] py-4 rounded-3xl shadow-md mt-4');
 
         const slot = document.createElement('slot');
         grayShape.appendChild(slot);
